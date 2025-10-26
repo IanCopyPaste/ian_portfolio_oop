@@ -56,7 +56,6 @@ Partial Class GAME
         RM1 = New PictureBox()
         RH3 = New PictureBox()
         RH2 = New PictureBox()
-        bgBoat = New PictureBox()
         Label1 = New Label()
         bgPlane = New PictureBox()
         RH1 = New PictureBox()
@@ -65,6 +64,7 @@ Partial Class GAME
         sunImg = New PictureBox()
         RboatImg = New PictureBox()
         rightIslandImg = New PictureBox()
+        bgBoat = New PictureBox()
         oceanBg = New PictureBox()
         PlaneTimer = New Timer(components)
         BoatTimer = New Timer(components)
@@ -96,7 +96,6 @@ Partial Class GAME
         CType(RM1, ComponentModel.ISupportInitialize).BeginInit()
         CType(RH3, ComponentModel.ISupportInitialize).BeginInit()
         CType(RH2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(bgBoat, ComponentModel.ISupportInitialize).BeginInit()
         CType(bgPlane, ComponentModel.ISupportInitialize).BeginInit()
         CType(RH1, ComponentModel.ISupportInitialize).BeginInit()
         CType(leftIslandImg, ComponentModel.ISupportInitialize).BeginInit()
@@ -104,13 +103,13 @@ Partial Class GAME
         CType(sunImg, ComponentModel.ISupportInitialize).BeginInit()
         CType(RboatImg, ComponentModel.ISupportInitialize).BeginInit()
         CType(rightIslandImg, ComponentModel.ISupportInitialize).BeginInit()
+        CType(bgBoat, ComponentModel.ISupportInitialize).BeginInit()
         CType(oceanBg, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' backDropPanel
         ' 
         backDropPanel.BackColor = Color.Transparent
-        backDropPanel.Controls.Add(bgBoat)
         backDropPanel.Controls.Add(LboatImg)
         backDropPanel.Controls.Add(LBM3)
         backDropPanel.Controls.Add(LBM2)
@@ -150,6 +149,7 @@ Partial Class GAME
         backDropPanel.Controls.Add(sunImg)
         backDropPanel.Controls.Add(RboatImg)
         backDropPanel.Controls.Add(rightIslandImg)
+        backDropPanel.Controls.Add(bgBoat)
         backDropPanel.Controls.Add(oceanBg)
         backDropPanel.Dock = DockStyle.Fill
         backDropPanel.Location = New Point(0, 0)
@@ -486,16 +486,6 @@ Partial Class GAME
         RH2.TabIndex = 13
         RH2.TabStop = False
         ' 
-        ' bgBoat
-        ' 
-        bgBoat.Image = CType(resources.GetObject("bgBoat.Image"), Image)
-        bgBoat.Location = New Point(-148, 510)
-        bgBoat.Name = "bgBoat"
-        bgBoat.Size = New Size(181, 81)
-        bgBoat.SizeMode = PictureBoxSizeMode.StretchImage
-        bgBoat.TabIndex = 8
-        bgBoat.TabStop = False
-        ' 
         ' Label1
         ' 
         Label1.AutoSize = True
@@ -583,6 +573,16 @@ Partial Class GAME
         rightIslandImg.TabIndex = 2
         rightIslandImg.TabStop = False
         ' 
+        ' bgBoat
+        ' 
+        bgBoat.Image = CType(resources.GetObject("bgBoat.Image"), Image)
+        bgBoat.Location = New Point(-13, 510)
+        bgBoat.Name = "bgBoat"
+        bgBoat.Size = New Size(181, 81)
+        bgBoat.SizeMode = PictureBoxSizeMode.StretchImage
+        bgBoat.TabIndex = 8
+        bgBoat.TabStop = False
+        ' 
         ' oceanBg
         ' 
         oceanBg.BackColor = Color.Transparent
@@ -645,7 +645,6 @@ Partial Class GAME
         CType(RM1, ComponentModel.ISupportInitialize).EndInit()
         CType(RH3, ComponentModel.ISupportInitialize).EndInit()
         CType(RH2, ComponentModel.ISupportInitialize).EndInit()
-        CType(bgBoat, ComponentModel.ISupportInitialize).EndInit()
         CType(bgPlane, ComponentModel.ISupportInitialize).EndInit()
         CType(RH1, ComponentModel.ISupportInitialize).EndInit()
         CType(leftIslandImg, ComponentModel.ISupportInitialize).EndInit()
@@ -653,6 +652,7 @@ Partial Class GAME
         CType(sunImg, ComponentModel.ISupportInitialize).EndInit()
         CType(RboatImg, ComponentModel.ISupportInitialize).EndInit()
         CType(rightIslandImg, ComponentModel.ISupportInitialize).EndInit()
+        CType(bgBoat, ComponentModel.ISupportInitialize).EndInit()
         CType(oceanBg, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub

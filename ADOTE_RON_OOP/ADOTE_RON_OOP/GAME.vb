@@ -13,20 +13,51 @@ Public Class GAME
     End Sub
 
     Public Sub LoadAssets()
-        Dim allControls As Control() = {
-        RboatImg, LboatImg, bgBoat,
-        RH1, RH2, RH3, RM1, RM2, RM3,
-        RBH1, RBH2, RBH3, RBM1, RBM2, RBM3,
-        LH1, LH2, LH3, LM1, LM2, LM3,
-        LBH1, LBH2, LBH3, LBM1, LBM2, LBM3,
-        H1, H2, H3,
-        Label1, sunImg, rightIslandImg, leftIslandImg,
-        bgPlane, whateImg
-    }
-        For Each ctrl As Control In allControls
-            ctrl.Parent = oceanBg
-        Next
+        RboatImg.Parent = oceanBg
+        LboatImg.Parent = oceanBg
+
+        RH1.Parent = oceanBg
+        RH2.Parent = oceanBg
+        RH3.Parent = oceanBg
+        RM1.Parent = oceanBg
+        RM2.Parent = oceanBg
+        RM3.Parent = oceanBg
+
+        RBH1.Parent = oceanBg
+        RBH2.Parent = oceanBg
+        RBH3.Parent = oceanBg
+        RBM1.Parent = oceanBg
+        RBM2.Parent = oceanBg
+        RBM3.Parent = oceanBg
+
+        LH1.Parent = oceanBg
+        LH2.Parent = oceanBg
+        LH3.Parent = oceanBg
+        LM1.Parent = oceanBg
+        LM2.Parent = oceanBg
+        LM3.Parent = oceanBg
+
+        LBH1.Parent = oceanBg
+        LBH2.Parent = oceanBg
+        LBH3.Parent = oceanBg
+        LBM1.Parent = oceanBg
+        LBM2.Parent = oceanBg
+        LBM3.Parent = oceanBg
+
+        H1.Parent = oceanBg
+        H2.Parent = oceanBg
+        H3.Parent = oceanBg
+
+        bgBoat.Parent = oceanBg
+        Label1.Parent = oceanBg
+        sunImg.Parent = oceanBg
+        rightIslandImg.Parent = oceanBg
+        leftIslandImg.Parent = oceanBg
+        bgPlane.Parent = oceanBg
+        whateImg.Parent = oceanBg
+
     End Sub
+
 
     Public Sub LoadSound()
         'Dim sound As New SoundPlayer("C:\Users\CLIENT\Downloads\Party Tunes – Brainrot Rap [Official Video].wav")
@@ -51,8 +82,6 @@ Public Class GAME
         End If
         bgBoat.Location = New Point(boatX, 510)
     End Sub
-
-
 
     'rightSide main process starts
     Private Sub RH1_Click(sender As Object, e As EventArgs) Handles RH1.Click, RH2.Click, RH3.Click, RM1.Click, RM2.Click, RM3.Click
@@ -468,5 +497,5 @@ Public Class GAME
         Dim pb As PictureBox = CType(oceanBg.Controls(leftboat), PictureBox)
         pb.Visible = True
     End Sub
-    'left methods ends
+    'left method ends
 End Class
