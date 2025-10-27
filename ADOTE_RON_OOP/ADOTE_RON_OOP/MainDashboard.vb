@@ -48,7 +48,7 @@ Public Class MainDashboard
         player.Play()
     End Sub
 
-    Private Sub GAMEDEVILSPRIESTSToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GAMEDEVILSPRIESTSToolStripMenuItem.Click
+    Private Sub GamesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GamesToolStripMenuItem.Click
         GAME.Show()
         Me.Close()
     End Sub

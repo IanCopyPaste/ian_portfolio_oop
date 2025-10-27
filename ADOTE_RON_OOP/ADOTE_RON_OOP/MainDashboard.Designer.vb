@@ -34,10 +34,13 @@ Partial Class MainDashboard
         WEEK7ToolStripMenuItem = New ToolStripMenuItem()
         GAMEDEVILSPRIESTSToolStripMenuItem = New ToolStripMenuItem()
         DEVSPREFRENCEToolStripMenuItem = New ToolStripMenuItem()
+        GamesToolStripMenuItem = New ToolStripMenuItem()
         EXITToolStripMenuItem = New ToolStripMenuItem()
         Label1 = New Label()
         Label2 = New Label()
         PictureBox1 = New PictureBox()
+        WEK9ToolStripMenuItem = New ToolStripMenuItem()
+        WEEK1011ToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -56,7 +59,7 @@ Partial Class MainDashboard
         ' 
         ' WEEKLYERRANDSToolStripMenuItem
         ' 
-        WEEKLYERRANDSToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {ToolStripMenuItem2, WEEK2ToolStripMenuItem, WEEK3ToolStripMenuItem, WEEK4ToolStripMenuItem, WEEK5ToolStripMenuItem, WEEK6ToolStripMenuItem1, WEEK7ToolStripMenuItem, GAMEDEVILSPRIESTSToolStripMenuItem})
+        WEEKLYERRANDSToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {ToolStripMenuItem2, WEEK2ToolStripMenuItem, WEEK3ToolStripMenuItem, WEEK4ToolStripMenuItem, WEEK5ToolStripMenuItem, WEEK6ToolStripMenuItem1, WEEK7ToolStripMenuItem, GAMEDEVILSPRIESTSToolStripMenuItem, WEK9ToolStripMenuItem, WEEK1011ToolStripMenuItem})
         WEEKLYERRANDSToolStripMenuItem.Font = New Font("Arial", 9.75F, FontStyle.Bold)
         WEEKLYERRANDSToolStripMenuItem.ForeColor = SystemColors.ButtonHighlight
         WEEKLYERRANDSToolStripMenuItem.Image = CType(resources.GetObject("WEEKLYERRANDSToolStripMenuItem.Image"), Image)
@@ -68,58 +71,65 @@ Partial Class MainDashboard
         ' 
         ToolStripMenuItem2.Name = "ToolStripMenuItem2"
         ToolStripMenuItem2.ShowShortcutKeys = False
-        ToolStripMenuItem2.Size = New Size(382, 22)
+        ToolStripMenuItem2.Size = New Size(547, 22)
         ToolStripMenuItem2.Text = "WEEK 1 - Orientation"
         ' 
         ' WEEK2ToolStripMenuItem
         ' 
         WEEK2ToolStripMenuItem.Name = "WEEK2ToolStripMenuItem"
-        WEEK2ToolStripMenuItem.Size = New Size(382, 22)
+        WEEK2ToolStripMenuItem.Size = New Size(547, 22)
         WEEK2ToolStripMenuItem.Text = "WEEK 2 - Introduction to OOP"
         ' 
         ' WEEK3ToolStripMenuItem
         ' 
         WEEK3ToolStripMenuItem.Name = "WEEK3ToolStripMenuItem"
-        WEEK3ToolStripMenuItem.Size = New Size(382, 22)
+        WEEK3ToolStripMenuItem.Size = New Size(547, 22)
         WEEK3ToolStripMenuItem.Text = "WEEK 3 - Getting Started With MS .VB"
         ' 
         ' WEEK4ToolStripMenuItem
         ' 
         WEEK4ToolStripMenuItem.Name = "WEEK4ToolStripMenuItem"
-        WEEK4ToolStripMenuItem.Size = New Size(382, 22)
+        WEEK4ToolStripMenuItem.Size = New Size(547, 22)
         WEEK4ToolStripMenuItem.Text = "WEEK 4 - Planning Apps and Designing Interface"
         ' 
         ' WEEK5ToolStripMenuItem
         ' 
         WEEK5ToolStripMenuItem.Name = "WEEK5ToolStripMenuItem"
-        WEEK5ToolStripMenuItem.Size = New Size(382, 22)
+        WEEK5ToolStripMenuItem.Size = New Size(547, 22)
         WEEK5ToolStripMenuItem.Text = "WEEK 5 - Data Handling"
         ' 
         ' WEEK6ToolStripMenuItem1
         ' 
         WEEK6ToolStripMenuItem1.Name = "WEEK6ToolStripMenuItem1"
-        WEEK6ToolStripMenuItem1.Size = New Size(382, 22)
+        WEEK6ToolStripMenuItem1.Size = New Size(547, 22)
         WEEK6ToolStripMenuItem1.Text = "WEEK 6 - Selection and Repitition Structure"
         ' 
         ' WEEK7ToolStripMenuItem
         ' 
         WEEK7ToolStripMenuItem.Name = "WEEK7ToolStripMenuItem"
-        WEEK7ToolStripMenuItem.Size = New Size(382, 22)
+        WEEK7ToolStripMenuItem.Size = New Size(547, 22)
         WEEK7ToolStripMenuItem.Text = "WEEK 7 - Arrays"
         ' 
         ' GAMEDEVILSPRIESTSToolStripMenuItem
         ' 
         GAMEDEVILSPRIESTSToolStripMenuItem.Name = "GAMEDEVILSPRIESTSToolStripMenuItem"
-        GAMEDEVILSPRIESTSToolStripMenuItem.Size = New Size(382, 22)
-        GAMEDEVILSPRIESTSToolStripMenuItem.Text = "GAME - DEVILS AND PRIESTS"
+        GAMEDEVILSPRIESTSToolStripMenuItem.Size = New Size(547, 22)
+        GAMEDEVILSPRIESTSToolStripMenuItem.Text = "WEEK 8 - Working with Controls and Properties"
         ' 
         ' DEVSPREFRENCEToolStripMenuItem
         ' 
+        DEVSPREFRENCEToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {GamesToolStripMenuItem})
         DEVSPREFRENCEToolStripMenuItem.Font = New Font("Arial", 9.75F, FontStyle.Bold)
         DEVSPREFRENCEToolStripMenuItem.ForeColor = SystemColors.ButtonHighlight
         DEVSPREFRENCEToolStripMenuItem.Name = "DEVSPREFRENCEToolStripMenuItem"
-        DEVSPREFRENCEToolStripMenuItem.Size = New Size(126, 20)
-        DEVSPREFRENCEToolStripMenuItem.Text = "Dev's Preference"
+        DEVSPREFRENCEToolStripMenuItem.Size = New Size(63, 20)
+        DEVSPREFRENCEToolStripMenuItem.Text = "Games"
+        ' 
+        ' GamesToolStripMenuItem
+        ' 
+        GamesToolStripMenuItem.Name = "GamesToolStripMenuItem"
+        GamesToolStripMenuItem.Size = New Size(198, 22)
+        GamesToolStripMenuItem.Text = "Monster Vs Humans"
         ' 
         ' EXITToolStripMenuItem
         ' 
@@ -169,6 +179,18 @@ Partial Class MainDashboard
         PictureBox1.TabIndex = 3
         PictureBox1.TabStop = False
         ' 
+        ' WEK9ToolStripMenuItem
+        ' 
+        WEK9ToolStripMenuItem.Name = "WEK9ToolStripMenuItem"
+        WEK9ToolStripMenuItem.Size = New Size(547, 22)
+        WEK9ToolStripMenuItem.Text = "WEK 9 - Debugging and Tracing"
+        ' 
+        ' WEEK1011ToolStripMenuItem
+        ' 
+        WEEK1011ToolStripMenuItem.Name = "WEEK1011ToolStripMenuItem"
+        WEEK1011ToolStripMenuItem.Size = New Size(547, 22)
+        WEEK1011ToolStripMenuItem.Text = "WEEK 10 & 11 - Working with .NET Framework and Multi Document Interface"
+        ' 
         ' MainDashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 16F)
@@ -210,4 +232,7 @@ Partial Class MainDashboard
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents WEEK7ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GAMEDEVILSPRIESTSToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GamesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents WEK9ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents WEEK1011ToolStripMenuItem As ToolStripMenuItem
 End Class
