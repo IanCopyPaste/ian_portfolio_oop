@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|c:\\users\\client\\documents\\vbworks\\adote_ron_oop\\adote_ron_oop\\adote_ron_oop\\week11-12.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|solutionrelative:adote_ron_oop\\week11-12.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|c:\\users\\client\\documents\\vbworks\\adote_ron_oop\\adote_ron_oop\\adote_ron_oop\\week7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|solutionrelative:adote_ron_oop\\week7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
@@ -31,6 +35,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "WEEK11-12.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\WEEK11-12.vb",
+              "RelativeDocumentMoniker": "ADOTE_RON_OOP\\WEEK11-12.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\WEEK11-12.vb [Design]",
+              "RelativeToolTip": "ADOTE_RON_OOP\\WEEK11-12.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-27T16:16:56.056Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "WEEK7.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\WEEK7.vb",
               "RelativeDocumentMoniker": "ADOTE_RON_OOP\\WEEK7.vb",
@@ -42,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainDashboard.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\MainDashboard.vb",
               "RelativeDocumentMoniker": "ADOTE_RON_OOP\\MainDashboard.vb",
@@ -55,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainDashboard.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\MainDashboard.vb",
               "RelativeDocumentMoniker": "ADOTE_RON_OOP\\MainDashboard.vb",
