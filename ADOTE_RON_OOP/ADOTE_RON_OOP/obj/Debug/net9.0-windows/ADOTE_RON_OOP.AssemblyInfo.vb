@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("ADOTE_RON_OOP"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2fae51708560c2b79871a742b3c647b1c8d26be"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e7412be065cf8853ab26f1b7896d48051386e13"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("ADOTE_RON_OOP"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("ADOTE_RON_OOP"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

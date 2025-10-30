@@ -16,9 +16,6 @@
     <Compile Update="WEEK1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="WEEK11-12.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="WEEK2.vb">
       <SubType>Form</SubType>
     </Compile>

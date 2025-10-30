@@ -26,6 +26,15 @@ Partial Class WEEK11_12
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(WEEK11_12))
         Button4 = New Button()
         AllPanel = New Panel()
+        TrimPanel = New Panel()
+        PictureBox2 = New PictureBox()
+        Label83 = New Label()
+        Label84 = New Label()
+        Button12 = New Button()
+        Label85 = New Label()
+        txtTrim = New TextBox()
+        txtTrimResult = New TextBox()
+        Label86 = New Label()
         StrDupePanel = New Panel()
         Label78 = New Label()
         Button11 = New Button()
@@ -38,14 +47,6 @@ Partial Class WEEK11_12
         txtDupe = New TextBox()
         txtDupeResult = New TextBox()
         Label77 = New Label()
-        TrimPanel = New Panel()
-        Label83 = New Label()
-        Label84 = New Label()
-        Button12 = New Button()
-        Label85 = New Label()
-        txtTrim = New TextBox()
-        txtTrimResult = New TextBox()
-        Label86 = New Label()
         StrReversePanel = New Panel()
         Label79 = New Label()
         Label80 = New Label()
@@ -243,8 +244,9 @@ Partial Class WEEK11_12
         timerforFormatDT = New Timer(components)
         BackgroundWorker1 = New ComponentModel.BackgroundWorker()
         AllPanel.SuspendLayout()
-        StrDupePanel.SuspendLayout()
         TrimPanel.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        StrDupePanel.SuspendLayout()
         StrReversePanel.SuspendLayout()
         SpacePanel.SuspendLayout()
         AscPanel.SuspendLayout()
@@ -294,6 +296,7 @@ Partial Class WEEK11_12
         AllPanel.BackColor = Color.Transparent
         AllPanel.BackgroundImage = CType(resources.GetObject("AllPanel.BackgroundImage"), Image)
         AllPanel.BackgroundImageLayout = ImageLayout.Stretch
+        AllPanel.Controls.Add(PictureBox2)
         AllPanel.Controls.Add(TrimPanel)
         AllPanel.Controls.Add(StrDupePanel)
         AllPanel.Controls.Add(StrReversePanel)
@@ -323,6 +326,109 @@ Partial Class WEEK11_12
         AllPanel.Name = "AllPanel"
         AllPanel.Size = New Size(930, 494)
         AllPanel.TabIndex = 7
+        ' 
+        ' TrimPanel
+        ' 
+        TrimPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        TrimPanel.Controls.Add(Label83)
+        TrimPanel.Controls.Add(Label84)
+        TrimPanel.Controls.Add(Button12)
+        TrimPanel.Controls.Add(Label85)
+        TrimPanel.Controls.Add(txtTrim)
+        TrimPanel.Controls.Add(txtTrimResult)
+        TrimPanel.Controls.Add(Label86)
+        TrimPanel.Location = New Point(295, 55)
+        TrimPanel.Name = "TrimPanel"
+        TrimPanel.Size = New Size(626, 427)
+        TrimPanel.TabIndex = 56
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(295, 55)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(626, 427)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox2.TabIndex = 57
+        PictureBox2.TabStop = False
+        ' 
+        ' Label83
+        ' 
+        Label83.AutoSize = True
+        Label83.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label83.ForeColor = Color.Black
+        Label83.Location = New Point(549, 0)
+        Label83.Name = "Label83"
+        Label83.Size = New Size(76, 21)
+        Label83.TabIndex = 30
+        Label83.Text = "Trim Text"
+        ' 
+        ' Label84
+        ' 
+        Label84.AutoSize = True
+        Label84.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label84.ForeColor = Color.Black
+        Label84.Location = New Point(391, 155)
+        Label84.Name = "Label84"
+        Label84.Size = New Size(75, 21)
+        Label84.TabIndex = 62
+        Label84.Text = "Trimmed"
+        ' 
+        ' Button12
+        ' 
+        Button12.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button12.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button12.FlatAppearance.MouseDownBackColor = Color.Purple
+        Button12.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        Button12.FlatStyle = FlatStyle.Popup
+        Button12.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button12.ForeColor = Color.Black
+        Button12.Location = New Point(220, 257)
+        Button12.Name = "Button12"
+        Button12.Size = New Size(162, 24)
+        Button12.TabIndex = 57
+        Button12.Text = "Convert"
+        Button12.UseVisualStyleBackColor = False
+        ' 
+        ' Label85
+        ' 
+        Label85.AutoSize = True
+        Label85.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label85.ForeColor = Color.Black
+        Label85.Location = New Point(168, 152)
+        Label85.Name = "Label85"
+        Label85.Size = New Size(49, 21)
+        Label85.TabIndex = 61
+        Label85.Text = "Input"
+        ' 
+        ' txtTrim
+        ' 
+        txtTrim.Font = New Font("Segoe UI", 9.75F)
+        txtTrim.Location = New Point(104, 192)
+        txtTrim.Name = "txtTrim"
+        txtTrim.PlaceholderText = "Enter Anyhing"
+        txtTrim.Size = New Size(178, 25)
+        txtTrim.TabIndex = 58
+        ' 
+        ' txtTrimResult
+        ' 
+        txtTrimResult.Font = New Font("Segoe UI", 9.75F)
+        txtTrimResult.Location = New Point(327, 192)
+        txtTrimResult.Name = "txtTrimResult"
+        txtTrimResult.PlaceholderText = "Enter Anyhing"
+        txtTrimResult.ReadOnly = True
+        txtTrimResult.Size = New Size(205, 25)
+        txtTrimResult.TabIndex = 59
+        ' 
+        ' Label86
+        ' 
+        Label86.AutoSize = True
+        Label86.ForeColor = Color.Black
+        Label86.Location = New Point(290, 196)
+        Label86.Name = "Label86"
+        Label86.Size = New Size(31, 15)
+        Label86.TabIndex = 60
+        Label86.Text = "==>"
         ' 
         ' StrDupePanel
         ' 
@@ -469,99 +575,6 @@ Partial Class WEEK11_12
         Label77.Size = New Size(31, 15)
         Label77.TabIndex = 60
         Label77.Text = "==>"
-        ' 
-        ' TrimPanel
-        ' 
-        TrimPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        TrimPanel.Controls.Add(Label83)
-        TrimPanel.Controls.Add(Label84)
-        TrimPanel.Controls.Add(Button12)
-        TrimPanel.Controls.Add(Label85)
-        TrimPanel.Controls.Add(txtTrim)
-        TrimPanel.Controls.Add(txtTrimResult)
-        TrimPanel.Controls.Add(Label86)
-        TrimPanel.Location = New Point(295, 55)
-        TrimPanel.Name = "TrimPanel"
-        TrimPanel.Size = New Size(626, 427)
-        TrimPanel.TabIndex = 56
-        ' 
-        ' Label83
-        ' 
-        Label83.AutoSize = True
-        Label83.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label83.ForeColor = Color.Black
-        Label83.Location = New Point(549, 0)
-        Label83.Name = "Label83"
-        Label83.Size = New Size(76, 21)
-        Label83.TabIndex = 30
-        Label83.Text = "Trim Text"
-        ' 
-        ' Label84
-        ' 
-        Label84.AutoSize = True
-        Label84.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label84.ForeColor = Color.Black
-        Label84.Location = New Point(391, 155)
-        Label84.Name = "Label84"
-        Label84.Size = New Size(75, 21)
-        Label84.TabIndex = 62
-        Label84.Text = "Trimmed"
-        ' 
-        ' Button12
-        ' 
-        Button12.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        Button12.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        Button12.FlatAppearance.MouseDownBackColor = Color.Purple
-        Button12.FlatAppearance.MouseOverBackColor = Color.Fuchsia
-        Button12.FlatStyle = FlatStyle.Popup
-        Button12.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button12.ForeColor = Color.Black
-        Button12.Location = New Point(220, 257)
-        Button12.Name = "Button12"
-        Button12.Size = New Size(162, 24)
-        Button12.TabIndex = 57
-        Button12.Text = "Convert"
-        Button12.UseVisualStyleBackColor = False
-        ' 
-        ' Label85
-        ' 
-        Label85.AutoSize = True
-        Label85.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label85.ForeColor = Color.Black
-        Label85.Location = New Point(168, 152)
-        Label85.Name = "Label85"
-        Label85.Size = New Size(49, 21)
-        Label85.TabIndex = 61
-        Label85.Text = "Input"
-        ' 
-        ' txtTrim
-        ' 
-        txtTrim.Font = New Font("Segoe UI", 9.75F)
-        txtTrim.Location = New Point(104, 192)
-        txtTrim.Name = "txtTrim"
-        txtTrim.PlaceholderText = "Enter Anyhing"
-        txtTrim.Size = New Size(178, 25)
-        txtTrim.TabIndex = 58
-        ' 
-        ' txtTrimResult
-        ' 
-        txtTrimResult.Font = New Font("Segoe UI", 9.75F)
-        txtTrimResult.Location = New Point(327, 192)
-        txtTrimResult.Name = "txtTrimResult"
-        txtTrimResult.PlaceholderText = "Enter Anyhing"
-        txtTrimResult.ReadOnly = True
-        txtTrimResult.Size = New Size(205, 25)
-        txtTrimResult.TabIndex = 59
-        ' 
-        ' Label86
-        ' 
-        Label86.AutoSize = True
-        Label86.ForeColor = Color.Black
-        Label86.Location = New Point(290, 196)
-        Label86.Name = "Label86"
-        Label86.Size = New Size(31, 15)
-        Label86.TabIndex = 60
-        Label86.Text = "==>"
         ' 
         ' StrReversePanel
         ' 
@@ -2841,10 +2854,11 @@ Partial Class WEEK11_12
         Text = "WEEK11_12 - MDI Simulate"
         AllPanel.ResumeLayout(False)
         AllPanel.PerformLayout()
-        StrDupePanel.ResumeLayout(False)
-        StrDupePanel.PerformLayout()
         TrimPanel.ResumeLayout(False)
         TrimPanel.PerformLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        StrDupePanel.ResumeLayout(False)
+        StrDupePanel.PerformLayout()
         StrReversePanel.ResumeLayout(False)
         StrReversePanel.PerformLayout()
         SpacePanel.ResumeLayout(False)
@@ -3101,4 +3115,5 @@ Partial Class WEEK11_12
     Friend WithEvents txtTrim As TextBox
     Friend WithEvents txtTrimResult As TextBox
     Friend WithEvents Label86 As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
