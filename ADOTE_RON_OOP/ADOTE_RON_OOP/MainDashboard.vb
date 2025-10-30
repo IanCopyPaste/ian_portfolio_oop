@@ -33,16 +33,13 @@ Public Class MainDashboard
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         Label1.Parent = PictureBox1
         Label2.Parent = PictureBox1
-        ' Make parent form an MDI container
         Me.IsMdiContainer = True
 
-        ' --- Ensure PictureBox stays behind everything ---
         PictureBox1.SendToBack()
 
-        ' --- Bring the MdiClient area to the front ---
         For Each ctl As Control In Me.Controls
             If TypeOf ctl Is MdiClient Then
-                ctl.Visible = False  ' Hide initially
+                ctl.Visible = False
             End If
         Next
     End Sub
@@ -66,11 +63,8 @@ Public Class MainDashboard
     End Sub
 
     Private Sub ShowMdiChild()
-        ' Show your MDI child form
         Dim childForm As New WEEK11_12()
         childForm.MdiParent = Me
-
-        ' Make MDI client visible and bring to front
         For Each ctl As Control In Me.Controls
             If TypeOf ctl Is MdiClient Then
                 ctl.Visible = True
@@ -81,10 +75,8 @@ Public Class MainDashboard
         childForm.Show()
     End Sub
     Public Sub RefreshContent()
-        ' Refresh your controls, data, etc.
         Me.Refresh()
 
-        ' Send MDI client to back if no children
         For Each ctl As Control In Me.Controls
             If TypeOf ctl Is MdiClient Then
                 If Me.MdiChildren.Length = 0 Then
