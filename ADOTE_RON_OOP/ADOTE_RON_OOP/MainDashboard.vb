@@ -19,10 +19,6 @@ Public Class MainDashboard
         Me.Dispose()
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
     Private Sub WEEK5ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles WEEK5ToolStripMenuItem.Click
         WEEK5.Show()
         Me.Hide()
@@ -37,6 +33,18 @@ Public Class MainDashboard
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         Label1.Parent = PictureBox1
         Label2.Parent = PictureBox1
+        ' Make parent form an MDI container
+        Me.IsMdiContainer = True
+
+        ' --- Ensure PictureBox stays behind everything ---
+        PictureBox1.SendToBack()
+
+        ' --- Bring the MdiClient area to the front ---
+        For Each ctl As Control In Me.Controls
+            If TypeOf ctl Is MdiClient Then
+                ctl.Visible = False  ' Hide initially
+            End If
+        Next
     End Sub
 
     Private Sub WEEK7ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles WEEK7ToolStripMenuItem.Click
@@ -52,4 +60,38 @@ Public Class MainDashboard
         GAME.Show()
         Me.Close()
     End Sub
+
+    Private Sub WEEK1011ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles WEEK1011ToolStripMenuItem.Click
+        ShowMdiChild()
+    End Sub
+
+    Private Sub ShowMdiChild()
+        ' Show your MDI child form
+        Dim childForm As New WEEK11_12()
+        childForm.MdiParent = Me
+
+        ' Make MDI client visible and bring to front
+        For Each ctl As Control In Me.Controls
+            If TypeOf ctl Is MdiClient Then
+                ctl.Visible = True
+                ctl.BringToFront()
+            End If
+        Next
+
+        childForm.Show()
+    End Sub
+    Public Sub RefreshContent()
+        ' Refresh your controls, data, etc.
+        Me.Refresh()
+
+        ' Send MDI client to back if no children
+        For Each ctl As Control In Me.Controls
+            If TypeOf ctl Is MdiClient Then
+                If Me.MdiChildren.Length = 0 Then
+                    ctl.SendToBack()
+                End If
+            End If
+        Next
+    End Sub
+
 End Class

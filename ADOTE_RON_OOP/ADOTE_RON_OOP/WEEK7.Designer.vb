@@ -88,6 +88,7 @@ Partial Class WEEK7
         ' 
         ' MonthsBtn
         ' 
+        MonthsBtn.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         MonthsBtn.BackColor = Color.Transparent
         MonthsBtn.BackgroundImageLayout = ImageLayout.None
         MonthsBtn.Cursor = Cursors.Hand
@@ -119,6 +120,7 @@ Partial Class WEEK7
         ' 
         ' Button4
         ' 
+        Button4.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Button4.BackColor = Color.Transparent
         Button4.BackgroundImageLayout = ImageLayout.None
         Button4.Cursor = Cursors.Hand
@@ -182,6 +184,7 @@ Partial Class WEEK7
         ' 
         ' DaysBtn
         ' 
+        DaysBtn.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         DaysBtn.BackColor = Color.Transparent
         DaysBtn.BackgroundImageLayout = ImageLayout.None
         DaysBtn.Cursor = Cursors.Hand
@@ -205,6 +208,7 @@ Partial Class WEEK7
         ' 
         ' Label1
         ' 
+        Label1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
         Label1.Cursor = Cursors.Hand
@@ -239,6 +243,7 @@ Partial Class WEEK7
         ' 
         ' dayLabel
         ' 
+        dayLabel.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         dayLabel.AutoSize = True
         dayLabel.Font = New Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         dayLabel.ForeColor = Color.White
@@ -250,6 +255,7 @@ Partial Class WEEK7
         ' 
         ' Combo1
         ' 
+        Combo1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Combo1.BackColor = Color.White
         Combo1.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Combo1.FormattingEnabled = True
@@ -262,6 +268,7 @@ Partial Class WEEK7
         ' 
         ' Label3
         ' 
+        Label3.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.White
@@ -273,6 +280,7 @@ Partial Class WEEK7
         ' 
         ' RichTextBox1
         ' 
+        RichTextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         RichTextBox1.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         RichTextBox1.BorderStyle = BorderStyle.None
         RichTextBox1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -285,6 +293,7 @@ Partial Class WEEK7
         ' 
         ' Label8
         ' 
+        Label8.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Label8.AutoSize = True
         Label8.BackColor = Color.Transparent
         Label8.Font = New Font("Trebuchet MS", 36F, FontStyle.Bold)
@@ -298,6 +307,7 @@ Partial Class WEEK7
         ' 
         ' PictureBox4
         ' 
+        PictureBox4.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), Image)
         PictureBox4.BackgroundImageLayout = ImageLayout.Stretch
         PictureBox4.Location = New Point(139, 12)
@@ -431,9 +441,9 @@ Partial Class WEEK7
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(958, 564)
+        Controls.Add(MonthsPanel)
         Controls.Add(StartUpPanel)
         Controls.Add(DaysPanel)
-        Controls.Add(MonthsPanel)
         Controls.Add(ControlPanek)
         Name = "WEEK7"
         StartPosition = FormStartPosition.CenterScreen

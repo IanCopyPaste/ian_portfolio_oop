@@ -33,14 +33,14 @@ Partial Class MainDashboard
         WEEK6ToolStripMenuItem1 = New ToolStripMenuItem()
         WEEK7ToolStripMenuItem = New ToolStripMenuItem()
         GAMEDEVILSPRIESTSToolStripMenuItem = New ToolStripMenuItem()
+        WEK9ToolStripMenuItem = New ToolStripMenuItem()
+        WEEK1011ToolStripMenuItem = New ToolStripMenuItem()
         DEVSPREFRENCEToolStripMenuItem = New ToolStripMenuItem()
         GamesToolStripMenuItem = New ToolStripMenuItem()
         EXITToolStripMenuItem = New ToolStripMenuItem()
         Label1 = New Label()
         Label2 = New Label()
         PictureBox1 = New PictureBox()
-        WEK9ToolStripMenuItem = New ToolStripMenuItem()
-        WEEK1011ToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -116,6 +116,18 @@ Partial Class MainDashboard
         GAMEDEVILSPRIESTSToolStripMenuItem.Size = New Size(547, 22)
         GAMEDEVILSPRIESTSToolStripMenuItem.Text = "WEEK 8 - Working with Controls and Properties"
         ' 
+        ' WEK9ToolStripMenuItem
+        ' 
+        WEK9ToolStripMenuItem.Name = "WEK9ToolStripMenuItem"
+        WEK9ToolStripMenuItem.Size = New Size(547, 22)
+        WEK9ToolStripMenuItem.Text = "WEK 9 - Debugging and Tracing"
+        ' 
+        ' WEEK1011ToolStripMenuItem
+        ' 
+        WEEK1011ToolStripMenuItem.Name = "WEEK1011ToolStripMenuItem"
+        WEEK1011ToolStripMenuItem.Size = New Size(547, 22)
+        WEEK1011ToolStripMenuItem.Text = "WEEK 10 & 11 - Working with .NET Framework and Multi Document Interface"
+        ' 
         ' DEVSPREFRENCEToolStripMenuItem
         ' 
         DEVSPREFRENCEToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {GamesToolStripMenuItem})
@@ -179,18 +191,6 @@ Partial Class MainDashboard
         PictureBox1.TabIndex = 3
         PictureBox1.TabStop = False
         ' 
-        ' WEK9ToolStripMenuItem
-        ' 
-        WEK9ToolStripMenuItem.Name = "WEK9ToolStripMenuItem"
-        WEK9ToolStripMenuItem.Size = New Size(547, 22)
-        WEK9ToolStripMenuItem.Text = "WEK 9 - Debugging and Tracing"
-        ' 
-        ' WEEK1011ToolStripMenuItem
-        ' 
-        WEEK1011ToolStripMenuItem.Name = "WEEK1011ToolStripMenuItem"
-        WEEK1011ToolStripMenuItem.Size = New Size(547, 22)
-        WEEK1011ToolStripMenuItem.Text = "WEEK 10 & 11 - Working with .NET Framework and Multi Document Interface"
-        ' 
         ' MainDashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 16F)
@@ -206,6 +206,7 @@ Partial Class MainDashboard
         Font = New Font("Arial", 9.75F, FontStyle.Bold)
         ForeColor = SystemColors.ButtonHighlight
         FormBorderStyle = FormBorderStyle.FixedSingle
+        IsMdiContainer = True
         MainMenuStrip = MenuStrip1
         Margin = New Padding(3, 2, 3, 2)
         Name = "MainDashboard"
@@ -229,10 +230,10 @@ Partial Class MainDashboard
     Friend WithEvents EXITToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label2 As Label
     Friend WithEvents WEEK6ToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents WEEK7ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GAMEDEVILSPRIESTSToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GamesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents WEK9ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents WEEK1011ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
