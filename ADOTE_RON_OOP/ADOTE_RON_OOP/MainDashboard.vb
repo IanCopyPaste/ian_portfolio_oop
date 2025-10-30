@@ -48,10 +48,6 @@ Public Class MainDashboard
         WEEK7.Show()
         Me.Hide()
     End Sub
-    Sub PlayGnarly()
-        Dim player As New SoundPlayer("C:\Users\CLIENT\Downloads\gnarly.wav")
-        player.Play()
-    End Sub
 
     Private Sub GamesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GamesToolStripMenuItem.Click
         GAME.Show()
@@ -85,5 +81,4 @@ Public Class MainDashboard
             End If
         Next
     End Sub
-
 End Class

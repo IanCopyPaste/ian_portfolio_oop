@@ -41,6 +41,7 @@ Partial Class MainDashboard
         Label1 = New Label()
         Label2 = New Label()
         PictureBox1 = New PictureBox()
+        CRUDTestingToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -130,12 +131,12 @@ Partial Class MainDashboard
         ' 
         ' DEVSPREFRENCEToolStripMenuItem
         ' 
-        DEVSPREFRENCEToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {GamesToolStripMenuItem})
+        DEVSPREFRENCEToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {GamesToolStripMenuItem, CRUDTestingToolStripMenuItem})
         DEVSPREFRENCEToolStripMenuItem.Font = New Font("Arial", 9.75F, FontStyle.Bold)
         DEVSPREFRENCEToolStripMenuItem.ForeColor = SystemColors.ButtonHighlight
         DEVSPREFRENCEToolStripMenuItem.Name = "DEVSPREFRENCEToolStripMenuItem"
-        DEVSPREFRENCEToolStripMenuItem.Size = New Size(63, 20)
-        DEVSPREFRENCEToolStripMenuItem.Text = "Games"
+        DEVSPREFRENCEToolStripMenuItem.Size = New Size(60, 20)
+        DEVSPREFRENCEToolStripMenuItem.Text = "Others"
         ' 
         ' GamesToolStripMenuItem
         ' 
@@ -191,6 +192,12 @@ Partial Class MainDashboard
         PictureBox1.TabIndex = 3
         PictureBox1.TabStop = False
         ' 
+        ' CRUDTestingToolStripMenuItem
+        ' 
+        CRUDTestingToolStripMenuItem.Name = "CRUDTestingToolStripMenuItem"
+        CRUDTestingToolStripMenuItem.Size = New Size(198, 22)
+        CRUDTestingToolStripMenuItem.Text = "CRUD Testing"
+        ' 
         ' MainDashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 16F)
@@ -236,4 +243,5 @@ Partial Class MainDashboard
     Friend WithEvents WEK9ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents WEEK1011ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents CRUDTestingToolStripMenuItem As ToolStripMenuItem
 End Class

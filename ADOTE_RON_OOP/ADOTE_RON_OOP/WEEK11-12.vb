@@ -112,7 +112,7 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles addBtn.Click
         If txtAddItems.Text = "" Then
             MsgBox("Please Enter Something", vbInformation, "Pls Add Item")
-        ElseIf findDupe(txtAddItems.text) Then
+        ElseIf findDupe(txtAddItems.Text) Then
             MsgBox("'" & txtAddItems.Text & "'" & " Already exists!!", vbInformation, "Duplication Error")
         Else
             AddItems.Items.Add(txtAddItems.Text)
@@ -285,4 +285,147 @@
     'RSET AREA ENDS
 
     'RSET AREA STARTS
+
+
+    'RTRIM AREA STARTS
+    Private Sub rtimBtn_Click(sender As Object, e As EventArgs) Handles rtimBtn.Click
+        RTrimPanel.BringToFront()
+        clearTextBox("RTrimPanel")
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        txtRtrimResult.Text = RTrim(txtRtrim.Text)
+    End Sub
+
+    'RTRIM AREA ENDS
+
+
+    'UCASE ARE STARTS
+    Private Sub ucaseBtn_Click(sender As Object, e As EventArgs) Handles ucaseBtn.Click
+        UcasePanel.BringToFront()
+        clearTextBox("UcasePanel")
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        txtUcaseResult.Text = UCase(txtUcase.Text)
+    End Sub
+    'UCASE ARE ENDS
+
+
+    'SPACE AREA STARTS
+    Private Sub spaceBtn_Click(sender As Object, e As EventArgs) Handles spaceBtn.Click
+        SpacePanel.BringToFront()
+        clearTextBox("SpacePanel")
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        If IsNumeric(txtNumberSpace.Text) Then
+            Dim s As Integer = txtNumberSpace.Text
+            txtSpaceWordResult.Text += txtSpaceWord.Text
+            txtSpaceWordResult.Text += Space(s)
+            txtNumberSpace.Clear()
+            txtSpaceWord.Clear()
+        Else
+            MsgBox("Please Enter a Number", vbInformation, "Wrong Input")
+        End If
+    End Sub
+
+    Private Sub clearBtnForSpace_Click(sender As Object, e As EventArgs) Handles clearBtnForSpace.Click
+        txtNumberSpace.Clear()
+        txtSpaceWord.Clear()
+        txtSpaceWordResult.Clear()
+    End Sub
+
+
+    'SPACE AREA ENDS
+
+    'SPLIT AREA STARTS
+    Private Sub splitBtn_Click(sender As Object, e As EventArgs) Handles splitBtn.Click
+        SplitPanel.BringToFront()
+        clearTextBox("SplitPanel")
+    End Sub
+
+    Private Sub splitBtnBtn_Click(sender As Object, e As EventArgs) Handles splitBtnBtn.Click
+        Dim text = txtSplit.Text
+        Dim container() As String
+
+        container = Split(text, ",")
+        For Each c In container
+            SplitTable.Items.Add(c)
+        Next
+    End Sub
+
+    'SPLIT AREA ENDS
+
+
+    'STR COMP AREA STARTS
+    Private Sub strCompBtn_Click(sender As Object, e As EventArgs) Handles strCompBtn.Click
+        StrCompPanel.BringToFront()
+        clearTextBox("StrCompPanel")
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Dim result = StrComp(strComp1.Text, strComp2.Text, vbTextCompare)
+        strCompResult.Text = result
+    End Sub
+    'STR COMP AREA ENDS
+
+    'STR CONV AREA STARS
+    Private Sub StrConvBtn_Click(sender As Object, e As EventArgs) Handles StrConvBtn.Click
+        StrConvPanel.BringToFront()
+        clearTextBox("StrCompPanel")
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        conv1.Text = StrConv(txtconv.Text, vbUpperCase)
+        conv3.Text = StrConv(txtconv.Text, vbLowerCase)
+    End Sub
+    'STR CONV AREA ENDS
+
+    'STR DUPE AREA STARTS
+    Private Sub StrDupBtn_Click(sender As Object, e As EventArgs) Handles StrDupBtn.Click
+        StrDupePanel.BringToFront()
+        clearTextBox("StrDupePanel")
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        If IsNumeric(numDupe.Text) Then
+            Dim result As String
+            Dim space As Integer = numDupe.Text
+            result = StrDup(space, txtDupe.Text)
+            txtDupeResult.Text = result
+        Else
+            MsgBox("Please Enter a Number", vbInformation, "Wrong Input")
+        End If
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        numDupe.Clear
+        txtDupe.Clear
+        txtDupeResult.Clear
+    End Sub
+    'STR DUPE AREA ENDS
+
+
+    'STR REVERSE AREA STARTS
+    Private Sub strReverseBtn_Click(sender As Object, e As EventArgs) Handles strReverseBtn.Click
+        StrReversePanel.BringToFront()
+        clearTextBox("StrReversePanel")
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        txtReversedResult.Text = StrReverse(txtReversed.Text)
+    End Sub
+    'STR REVERSE AREA STARTS
+
+    'TIM AREA STARTS
+    Private Sub trimBtn_Click(sender As Object, e As EventArgs) Handles trimBtn.Click
+        TrimPanel.BringToFront()
+        clearTextBox("TrimPanel")
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        txtTrimResult.Text = Trim(txtTrim.Text)
+    End Sub
+    'TIM AREA ENDS
 End Class

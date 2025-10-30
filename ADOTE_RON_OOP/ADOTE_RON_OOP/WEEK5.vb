@@ -1,13 +1,20 @@
-﻿Public Class WEEK5
+﻿Imports System.Media
+
+Public Class WEEK5
     Private Sub WEEK5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         StartUpPanel.BringToFront()
         numBox.Text = "0"
         PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
+        PlayGnarly()
     End Sub
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         StartUpPanel.BringToFront()
     End Sub
 
+    Sub PlayGnarly()
+        Dim player As New SoundPlayer("C:\Users\CLIENT\Downloads\gnarly.wav")
+        player.Play()
+    End Sub
 
     'DATA TYPE PANEL SECTION HERE'
     Dim isTrue As Boolean = True
@@ -92,14 +99,14 @@
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         MainDashboard.Show()
-        Me.Close()
+        Me.Dispose()
     End Sub
 
     'NUMBERS STARTS HERE
     Private Sub Buttons_Click(sender As Object, e As EventArgs) Handles btn1.Click, btn2.Click, btn3.Click, btn4.Click, btn4.Click, btn5.Click, btn6.Click, btn7.Click, btn8.Click, btn9.Click, btn0.Click, btn00.Click, btnDot.Click
         Dim btn As Button = DirectCast(sender, Button)
         If numBox.Text = "0" Then
-            numBox .Clear
+            numBox.Clear()
         End If
         numBox.Text += btn.Text
         cont += btn.Text

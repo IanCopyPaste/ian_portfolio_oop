@@ -11,16 +11,24 @@
       "RelativeMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|solutionrelative:adote_ron_oop\\week11-12.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|c:\\users\\client\\documents\\vbworks\\adote_ron_oop\\adote_ron_oop\\adote_ron_oop\\week7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|solutionrelative:adote_ron_oop\\week7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|c:\\users\\client\\documents\\vbworks\\adote_ron_oop\\adote_ron_oop\\adote_ron_oop\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|solutionrelative:adote_ron_oop\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|c:\\users\\client\\documents\\vbworks\\adote_ron_oop\\adote_ron_oop\\adote_ron_oop\\week5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|solutionrelative:adote_ron_oop\\week5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|c:\\users\\client\\documents\\vbworks\\adote_ron_oop\\adote_ron_oop\\adote_ron_oop\\week5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|solutionrelative:adote_ron_oop\\week5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|c:\\users\\client\\documents\\vbworks\\adote_ron_oop\\adote_ron_oop\\adote_ron_oop\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|solutionrelative:adote_ron_oop\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|c:\\users\\client\\documents\\vbworks\\adote_ron_oop\\adote_ron_oop\\adote_ron_oop\\week7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|solutionrelative:adote_ron_oop\\week7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 326,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +46,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WEEK5.vb",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\WEEK5.vb",
+              "RelativeDocumentMoniker": "ADOTE_RON_OOP\\WEEK5.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\WEEK5.vb",
+              "RelativeToolTip": "ADOTE_RON_OOP\\WEEK5.vb",
+              "ViewState": "AgIAAE0AAAAAAAAAAIAwwFoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-30T13:39:36.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "WEEK5.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\WEEK5.vb",
+              "RelativeDocumentMoniker": "ADOTE_RON_OOP\\WEEK5.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\WEEK5.vb [Design]",
+              "RelativeToolTip": "ADOTE_RON_OOP\\WEEK5.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-30T13:39:30.745Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MainDashboard.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\MainDashboard.vb",
               "RelativeDocumentMoniker": "ADOTE_RON_OOP\\MainDashboard.vb",
@@ -50,13 +83,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MainDashboard.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\MainDashboard.vb",
               "RelativeDocumentMoniker": "ADOTE_RON_OOP\\MainDashboard.vb",
               "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\MainDashboard.vb",
               "RelativeToolTip": "ADOTE_RON_OOP\\MainDashboard.vb",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAqwCsAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAADgvzIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-26T11:43:14.851Z",
               "EditorCaption": ""
@@ -69,7 +102,7 @@
               "RelativeDocumentMoniker": "ADOTE_RON_OOP\\WEEK11-12.vb",
               "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\WEEK11-12.vb*",
               "RelativeToolTip": "ADOTE_RON_OOP\\WEEK11-12.vb*",
-              "ViewState": "AgIAAPoAAAAAAAAAAAAiwB4BAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAHoBAAAAAAAAAIA6wIQBAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-30T02:50:21.179Z",
               "EditorCaption": ""
@@ -88,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "WEEK7.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\WEEK7.vb",
               "RelativeDocumentMoniker": "ADOTE_RON_OOP\\WEEK7.vb",

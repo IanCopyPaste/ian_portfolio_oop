@@ -93,3 +93,4 @@ C:\Users\CLIENT\Documents\vbWorks\ADOTE_RON_OOP\ADOTE_RON_OOP\ADOTE_RON_OOP\obj\
 C:\Users\CLIENT\Documents\vbWorks\ADOTE_RON_OOP\ADOTE_RON_OOP\ADOTE_RON_OOP\obj\Debug\net9.0-windows\ADOTE_RON_OOP.GAME.resources
 C:\Users\CLIENT\Documents\vbWorks\ADOTE_RON_OOP\ADOTE_RON_OOP\ADOTE_RON_OOP\obj\Debug\net9.0-windows\ADOTE_RON_OOP.sourcelink.json
 C:\Users\CLIENT\Documents\vbWorks\ADOTE_RON_OOP\ADOTE_RON_OOP\ADOTE_RON_OOP\obj\Debug\net9.0-windows\ADOTE_RON_OOP.WEEK11_12.resources
+C:\Users\CLIENT\Documents\vbWorks\ADOTE_RON_OOP\ADOTE_RON_OOP\ADOTE_RON_OOP\obj\Debug\net9.0-windows\ADOTE_RON_OOP.CRUD___Simple_Management_System.resources

@@ -26,16 +26,136 @@ Partial Class WEEK11_12
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(WEEK11_12))
         Button4 = New Button()
         AllPanel = New Panel()
+        StrDupePanel = New Panel()
+        Label78 = New Label()
+        Button11 = New Button()
+        Label74 = New Label()
+        Label71 = New Label()
+        numDupe = New TextBox()
+        Label75 = New Label()
+        Button10 = New Button()
+        Label76 = New Label()
+        txtDupe = New TextBox()
+        txtDupeResult = New TextBox()
+        Label77 = New Label()
+        TrimPanel = New Panel()
+        Label83 = New Label()
+        Label84 = New Label()
+        Button12 = New Button()
+        Label85 = New Label()
+        txtTrim = New TextBox()
+        txtTrimResult = New TextBox()
+        Label86 = New Label()
+        StrReversePanel = New Panel()
+        Label79 = New Label()
+        Label80 = New Label()
+        Button13 = New Button()
+        Label81 = New Label()
+        txtReversed = New TextBox()
+        txtReversedResult = New TextBox()
+        Label82 = New Label()
+        SpacePanel = New Panel()
+        clearBtnForSpace = New Button()
+        Label61 = New Label()
+        txtNumberSpace = New TextBox()
+        Label57 = New Label()
+        Label58 = New Label()
+        Label59 = New Label()
+        txtSpaceWordResult = New TextBox()
+        Label60 = New Label()
+        txtSpaceWord = New TextBox()
+        Button7 = New Button()
+        AscPanel = New Panel()
+        Label16 = New Label()
+        Label3 = New Label()
+        txtASCWresult = New TextBox()
+        Label4 = New Label()
+        txtASCW = New TextBox()
+        Button1 = New Button()
+        Label2 = New Label()
+        txtASCresult = New TextBox()
+        Label1 = New Label()
+        txtASC = New TextBox()
+        ascConvertBtn = New Button()
+        filterPanel = New Panel()
+        Label18 = New Label()
+        Label11 = New Label()
+        Label10 = New Label()
+        filtbtn = New Button()
+        txtFilterItems = New TextBox()
+        addBtn = New Button()
+        FilterItems = New ListBox()
+        txtAddItems = New TextBox()
+        AddItems = New ListBox()
+        SplitPanel = New Panel()
+        SplitTable = New ListBox()
+        Label64 = New Label()
+        Label65 = New Label()
+        Label66 = New Label()
+        txtSplit = New TextBox()
+        splitBtnBtn = New Button()
+        StrCompPanel = New Panel()
+        Label63 = New Label()
+        Label62 = New Label()
+        strCompResult = New TextBox()
+        strComp2 = New TextBox()
+        Label67 = New Label()
+        Label68 = New Label()
+        Label69 = New Label()
+        strComp1 = New TextBox()
+        Button9 = New Button()
+        FormatPercentPanel = New Panel()
+        percentBtn = New Button()
+        txtPercent = New TextBox()
+        num06 = New TextBox()
+        Label34 = New Label()
+        num05 = New TextBox()
+        Label35 = New Label()
+        num04 = New TextBox()
+        Label36 = New Label()
+        num03 = New TextBox()
+        Label37 = New Label()
+        num02 = New TextBox()
+        Label38 = New Label()
+        num01 = New TextBox()
+        Label39 = New Label()
+        Label40 = New Label()
+        StrConvPanel = New Panel()
+        Button8 = New Button()
+        txtconv = New TextBox()
+        conv3 = New TextBox()
+        Label72 = New Label()
+        Label70 = New Label()
+        conv1 = New TextBox()
+        Label73 = New Label()
         RTrimPanel = New Panel()
-        Button5 = New Button()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
         Label49 = New Label()
-        TextBox3 = New TextBox()
-        Label50 = New Label()
-        TextBox4 = New TextBox()
-        Label51 = New Label()
         Label52 = New Label()
+        Label50 = New Label()
+        txtRtrimResult = New TextBox()
+        Label51 = New Label()
+        txtRtrim = New TextBox()
+        Button5 = New Button()
+        UcasePanel = New Panel()
+        Label55 = New Label()
+        Label54 = New Label()
+        Label53 = New Label()
+        txtUcaseResult = New TextBox()
+        Button6 = New Button()
+        txtUcase = New TextBox()
+        Label56 = New Label()
+        characterPanel = New Panel()
+        Label17 = New Label()
+        Label5 = New Label()
+        txtCHRWresult = New TextBox()
+        txtCHRW = New TextBox()
+        Label6 = New Label()
+        CHRW = New Button()
+        Label8 = New Label()
+        txtCHRresult = New TextBox()
+        Label9 = New Label()
+        txtCHR = New TextBox()
+        chrConvert = New Button()
         RsetPanel = New Panel()
         btnRSet = New Button()
         txtword1 = New TextBox()
@@ -56,22 +176,6 @@ Partial Class WEEK11_12
         word1 = New TextBox()
         Label46 = New Label()
         Label47 = New Label()
-        FormatPercentPanel = New Panel()
-        percentBtn = New Button()
-        txtPercent = New TextBox()
-        num06 = New TextBox()
-        Label34 = New Label()
-        num05 = New TextBox()
-        Label35 = New Label()
-        num04 = New TextBox()
-        Label36 = New Label()
-        num03 = New TextBox()
-        Label37 = New Label()
-        num02 = New TextBox()
-        Label38 = New Label()
-        num01 = New TextBox()
-        Label39 = New Label()
-        Label40 = New Label()
         FormatNumberPanel = New Panel()
         Button2 = New Button()
         txtNum = New TextBox()
@@ -113,40 +217,6 @@ Partial Class WEEK11_12
         conv = New Button()
         priceResult = New TextBox()
         txtPrice = New TextBox()
-        AscPanel = New Panel()
-        Label16 = New Label()
-        Label3 = New Label()
-        txtASCWresult = New TextBox()
-        Label4 = New Label()
-        txtASCW = New TextBox()
-        Button1 = New Button()
-        Label2 = New Label()
-        txtASCresult = New TextBox()
-        Label1 = New Label()
-        txtASC = New TextBox()
-        ascConvertBtn = New Button()
-        filterPanel = New Panel()
-        Label18 = New Label()
-        Label11 = New Label()
-        Label10 = New Label()
-        filtbtn = New Button()
-        txtFilterItems = New TextBox()
-        addBtn = New Button()
-        FilterItems = New ListBox()
-        txtAddItems = New TextBox()
-        AddItems = New ListBox()
-        characterPanel = New Panel()
-        Label17 = New Label()
-        Label5 = New Label()
-        txtCHRWresult = New TextBox()
-        txtCHRW = New TextBox()
-        Label6 = New Label()
-        CHRW = New Button()
-        Label8 = New Label()
-        txtCHRresult = New TextBox()
-        Label9 = New Label()
-        txtCHR = New TextBox()
-        chrConvert = New Button()
         Panel5 = New Panel()
         Label7 = New Label()
         PictureBox1 = New PictureBox()
@@ -171,18 +241,27 @@ Partial Class WEEK11_12
         chrBtn = New Button()
         AscBtn = New Button()
         timerforFormatDT = New Timer(components)
+        BackgroundWorker1 = New ComponentModel.BackgroundWorker()
         AllPanel.SuspendLayout()
+        StrDupePanel.SuspendLayout()
+        TrimPanel.SuspendLayout()
+        StrReversePanel.SuspendLayout()
+        SpacePanel.SuspendLayout()
+        AscPanel.SuspendLayout()
+        filterPanel.SuspendLayout()
+        SplitPanel.SuspendLayout()
+        StrCompPanel.SuspendLayout()
+        FormatPercentPanel.SuspendLayout()
+        StrConvPanel.SuspendLayout()
         RTrimPanel.SuspendLayout()
+        UcasePanel.SuspendLayout()
+        characterPanel.SuspendLayout()
         RsetPanel.SuspendLayout()
         RightPanel.SuspendLayout()
-        FormatPercentPanel.SuspendLayout()
         FormatNumberPanel.SuspendLayout()
         FormatPanel.SuspendLayout()
         FormatDateTimePanel.SuspendLayout()
         FormatCurPanel.SuspendLayout()
-        AscPanel.SuspendLayout()
-        filterPanel.SuspendLayout()
-        characterPanel.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox1.SuspendLayout()
         SuspendLayout()
@@ -215,17 +294,25 @@ Partial Class WEEK11_12
         AllPanel.BackColor = Color.Transparent
         AllPanel.BackgroundImage = CType(resources.GetObject("AllPanel.BackgroundImage"), Image)
         AllPanel.BackgroundImageLayout = ImageLayout.Stretch
+        AllPanel.Controls.Add(TrimPanel)
+        AllPanel.Controls.Add(StrDupePanel)
+        AllPanel.Controls.Add(StrReversePanel)
+        AllPanel.Controls.Add(SpacePanel)
+        AllPanel.Controls.Add(AscPanel)
+        AllPanel.Controls.Add(filterPanel)
+        AllPanel.Controls.Add(SplitPanel)
+        AllPanel.Controls.Add(StrCompPanel)
+        AllPanel.Controls.Add(FormatPercentPanel)
+        AllPanel.Controls.Add(StrConvPanel)
         AllPanel.Controls.Add(RTrimPanel)
+        AllPanel.Controls.Add(UcasePanel)
+        AllPanel.Controls.Add(characterPanel)
         AllPanel.Controls.Add(RsetPanel)
         AllPanel.Controls.Add(RightPanel)
-        AllPanel.Controls.Add(FormatPercentPanel)
         AllPanel.Controls.Add(FormatNumberPanel)
         AllPanel.Controls.Add(FormatPanel)
         AllPanel.Controls.Add(FormatDateTimePanel)
         AllPanel.Controls.Add(FormatCurPanel)
-        AllPanel.Controls.Add(AscPanel)
-        AllPanel.Controls.Add(filterPanel)
-        AllPanel.Controls.Add(characterPanel)
         AllPanel.Controls.Add(Panel5)
         AllPanel.Controls.Add(Label7)
         AllPanel.Controls.Add(PictureBox1)
@@ -237,323 +324,921 @@ Partial Class WEEK11_12
         AllPanel.Size = New Size(930, 494)
         AllPanel.TabIndex = 7
         ' 
-        ' RTrimPanel
+        ' StrDupePanel
         ' 
-        RTrimPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        RTrimPanel.Controls.Add(Button5)
-        RTrimPanel.Controls.Add(TextBox1)
-        RTrimPanel.Controls.Add(TextBox2)
-        RTrimPanel.Controls.Add(Label49)
-        RTrimPanel.Controls.Add(TextBox3)
-        RTrimPanel.Controls.Add(Label50)
-        RTrimPanel.Controls.Add(TextBox4)
-        RTrimPanel.Controls.Add(Label51)
-        RTrimPanel.Controls.Add(Label52)
-        RTrimPanel.Location = New Point(295, 61)
-        RTrimPanel.Name = "RTrimPanel"
-        RTrimPanel.Size = New Size(623, 418)
-        RTrimPanel.TabIndex = 48
+        StrDupePanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        StrDupePanel.Controls.Add(Label78)
+        StrDupePanel.Controls.Add(Button11)
+        StrDupePanel.Controls.Add(Label74)
+        StrDupePanel.Controls.Add(Label71)
+        StrDupePanel.Controls.Add(numDupe)
+        StrDupePanel.Controls.Add(Label75)
+        StrDupePanel.Controls.Add(Button10)
+        StrDupePanel.Controls.Add(Label76)
+        StrDupePanel.Controls.Add(txtDupe)
+        StrDupePanel.Controls.Add(txtDupeResult)
+        StrDupePanel.Controls.Add(Label77)
+        StrDupePanel.ForeColor = Color.Black
+        StrDupePanel.Location = New Point(295, 56)
+        StrDupePanel.Name = "StrDupePanel"
+        StrDupePanel.Size = New Size(625, 426)
+        StrDupePanel.TabIndex = 54
         ' 
-        ' Button5
+        ' Label78
         ' 
-        Button5.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        Button5.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        Button5.FlatAppearance.MouseDownBackColor = Color.Purple
-        Button5.FlatAppearance.MouseOverBackColor = Color.Fuchsia
-        Button5.FlatStyle = FlatStyle.Popup
-        Button5.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button5.ForeColor = Color.Black
-        Button5.Location = New Point(228, 89)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(63, 24)
-        Button5.TabIndex = 19
-        Button5.Text = "Convert"
-        Button5.UseVisualStyleBackColor = False
+        Label78.AutoSize = True
+        Label78.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label78.ForeColor = Color.Black
+        Label78.Location = New Point(111, 372)
+        Label78.Name = "Label78"
+        Label78.Size = New Size(415, 21)
+        Label78.TabIndex = 66
+        Label78.Text = "*Note: StrDup only repeats the first letter in your word*"
         ' 
-        ' TextBox1
+        ' Button11
         ' 
-        TextBox1.Location = New Point(55, 89)
-        TextBox1.Name = "TextBox1"
-        TextBox1.PlaceholderText = "Enter Anyhing"
-        TextBox1.Size = New Size(161, 23)
-        TextBox1.TabIndex = 44
+        Button11.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button11.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button11.FlatAppearance.MouseDownBackColor = Color.Purple
+        Button11.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        Button11.FlatStyle = FlatStyle.Popup
+        Button11.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button11.ForeColor = Color.Black
+        Button11.Location = New Point(12, 10)
+        Button11.Name = "Button11"
+        Button11.Size = New Size(86, 24)
+        Button11.TabIndex = 65
+        Button11.Text = "Clear"
+        Button11.UseVisualStyleBackColor = False
         ' 
-        ' TextBox2
+        ' Label74
         ' 
-        TextBox2.Location = New Point(244, 280)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(250, 23)
-        TextBox2.TabIndex = 37
+        Label74.AutoSize = True
+        Label74.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label74.ForeColor = Color.Black
+        Label74.Location = New Point(32, 164)
+        Label74.Name = "Label74"
+        Label74.Size = New Size(98, 21)
+        Label74.TabIndex = 64
+        Label74.Text = "Enter Dupes"
+        Label74.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label49
+        ' Label71
         ' 
-        Label49.AutoSize = True
-        Label49.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label49.ForeColor = Color.Black
-        Label49.Location = New Point(122, 280)
-        Label49.Name = "Label49"
-        Label49.Size = New Size(124, 21)
-        Label49.TabIndex = 36
-        Label49.Text = "Right(txt, 20) = "
+        Label71.AutoSize = True
+        Label71.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label71.ForeColor = Color.Black
+        Label71.Location = New Point(551, -3)
+        Label71.Name = "Label71"
+        Label71.Size = New Size(74, 21)
+        Label71.TabIndex = 30
+        Label71.Text = "Str Dupe"
         ' 
-        ' TextBox3
+        ' numDupe
         ' 
-        TextBox3.Location = New Point(244, 223)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(250, 23)
-        TextBox3.TabIndex = 35
+        numDupe.Font = New Font("Segoe UI", 9.75F)
+        numDupe.Location = New Point(50, 203)
+        numDupe.Name = "numDupe"
+        numDupe.PlaceholderText = "Dupes"
+        numDupe.Size = New Size(54, 25)
+        numDupe.TabIndex = 63
         ' 
-        ' Label50
+        ' Label75
         ' 
-        Label50.AutoSize = True
-        Label50.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label50.ForeColor = Color.Black
-        Label50.Location = New Point(122, 223)
-        Label50.Name = "Label50"
-        Label50.Size = New Size(119, 21)
-        Label50.TabIndex = 34
-        Label50.Text = "Right(txt, 2)  = "
+        Label75.AutoSize = True
+        Label75.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label75.ForeColor = Color.Black
+        Label75.Location = New Point(413, 163)
+        Label75.Name = "Label75"
+        Label75.Size = New Size(81, 21)
+        Label75.TabIndex = 62
+        Label75.Text = "Repeated"
         ' 
-        ' TextBox4
+        ' Button10
         ' 
-        TextBox4.Location = New Point(244, 166)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(250, 23)
-        TextBox4.TabIndex = 33
+        Button10.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button10.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button10.FlatAppearance.MouseDownBackColor = Color.Purple
+        Button10.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        Button10.FlatStyle = FlatStyle.Popup
+        Button10.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button10.ForeColor = Color.Black
+        Button10.Location = New Point(220, 261)
+        Button10.Name = "Button10"
+        Button10.Size = New Size(162, 24)
+        Button10.TabIndex = 57
+        Button10.Text = "Convert"
+        Button10.UseVisualStyleBackColor = False
         ' 
-        ' Label51
+        ' Label76
         ' 
-        Label51.AutoSize = True
-        Label51.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label51.ForeColor = Color.Black
-        Label51.Location = New Point(123, 164)
-        Label51.Name = "Label51"
-        Label51.Size = New Size(115, 21)
-        Label51.TabIndex = 32
-        Label51.Text = "Right(txt, 5) = "
+        Label76.AutoSize = True
+        Label76.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label76.ForeColor = Color.Black
+        Label76.Location = New Point(189, 163)
+        Label76.Name = "Label76"
+        Label76.Size = New Size(49, 21)
+        Label76.TabIndex = 61
+        Label76.Text = "Input"
         ' 
-        ' Label52
+        ' txtDupe
         ' 
-        Label52.AutoSize = True
-        Label52.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label52.ForeColor = Color.Black
-        Label52.Location = New Point(523, 0)
-        Label52.Name = "Label52"
-        Label52.Size = New Size(100, 21)
-        Label52.TabIndex = 31
-        Label52.Text = "RSet Format"
+        txtDupe.Font = New Font("Segoe UI", 9.75F)
+        txtDupe.Location = New Point(125, 203)
+        txtDupe.Name = "txtDupe"
+        txtDupe.PlaceholderText = "Enter Anyhing"
+        txtDupe.Size = New Size(178, 25)
+        txtDupe.TabIndex = 58
         ' 
-        ' RsetPanel
+        ' txtDupeResult
         ' 
-        RsetPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        RsetPanel.Controls.Add(btnRSet)
-        RsetPanel.Controls.Add(txtword1)
-        RsetPanel.Controls.Add(txtResult3)
-        RsetPanel.Controls.Add(Label41)
-        RsetPanel.Controls.Add(txtResult2)
-        RsetPanel.Controls.Add(Label42)
-        RsetPanel.Controls.Add(txtResult1)
-        RsetPanel.Controls.Add(Label43)
-        RsetPanel.Controls.Add(Label48)
-        RsetPanel.Location = New Point(295, 64)
-        RsetPanel.Name = "RsetPanel"
-        RsetPanel.Size = New Size(623, 418)
-        RsetPanel.TabIndex = 47
+        txtDupeResult.Font = New Font("Segoe UI", 9.75F)
+        txtDupeResult.Location = New Point(348, 203)
+        txtDupeResult.Name = "txtDupeResult"
+        txtDupeResult.PlaceholderText = "Enter Anyhing"
+        txtDupeResult.ReadOnly = True
+        txtDupeResult.Size = New Size(210, 25)
+        txtDupeResult.TabIndex = 59
         ' 
-        ' btnRSet
+        ' Label77
         ' 
-        btnRSet.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        btnRSet.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        btnRSet.FlatAppearance.MouseDownBackColor = Color.Purple
-        btnRSet.FlatAppearance.MouseOverBackColor = Color.Fuchsia
-        btnRSet.FlatStyle = FlatStyle.Popup
-        btnRSet.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnRSet.ForeColor = Color.Black
-        btnRSet.Location = New Point(228, 89)
-        btnRSet.Name = "btnRSet"
-        btnRSet.Size = New Size(63, 24)
-        btnRSet.TabIndex = 19
-        btnRSet.Text = "Convert"
-        btnRSet.UseVisualStyleBackColor = False
+        Label77.AutoSize = True
+        Label77.ForeColor = Color.Black
+        Label77.Location = New Point(311, 207)
+        Label77.Name = "Label77"
+        Label77.Size = New Size(31, 15)
+        Label77.TabIndex = 60
+        Label77.Text = "==>"
         ' 
-        ' txtword1
+        ' TrimPanel
         ' 
-        txtword1.Location = New Point(55, 89)
-        txtword1.Name = "txtword1"
-        txtword1.PlaceholderText = "Enter Anyhing"
-        txtword1.Size = New Size(161, 23)
-        txtword1.TabIndex = 44
+        TrimPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        TrimPanel.Controls.Add(Label83)
+        TrimPanel.Controls.Add(Label84)
+        TrimPanel.Controls.Add(Button12)
+        TrimPanel.Controls.Add(Label85)
+        TrimPanel.Controls.Add(txtTrim)
+        TrimPanel.Controls.Add(txtTrimResult)
+        TrimPanel.Controls.Add(Label86)
+        TrimPanel.Location = New Point(295, 55)
+        TrimPanel.Name = "TrimPanel"
+        TrimPanel.Size = New Size(626, 427)
+        TrimPanel.TabIndex = 56
         ' 
-        ' txtResult3
+        ' Label83
         ' 
-        txtResult3.Location = New Point(244, 280)
-        txtResult3.Name = "txtResult3"
-        txtResult3.Size = New Size(250, 23)
-        txtResult3.TabIndex = 37
+        Label83.AutoSize = True
+        Label83.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label83.ForeColor = Color.Black
+        Label83.Location = New Point(549, 0)
+        Label83.Name = "Label83"
+        Label83.Size = New Size(76, 21)
+        Label83.TabIndex = 30
+        Label83.Text = "Trim Text"
         ' 
-        ' Label41
+        ' Label84
         ' 
-        Label41.AutoSize = True
-        Label41.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label41.ForeColor = Color.Black
-        Label41.Location = New Point(122, 280)
-        Label41.Name = "Label41"
-        Label41.Size = New Size(124, 21)
-        Label41.TabIndex = 36
-        Label41.Text = "Right(txt, 20) = "
+        Label84.AutoSize = True
+        Label84.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label84.ForeColor = Color.Black
+        Label84.Location = New Point(391, 155)
+        Label84.Name = "Label84"
+        Label84.Size = New Size(75, 21)
+        Label84.TabIndex = 62
+        Label84.Text = "Trimmed"
         ' 
-        ' txtResult2
+        ' Button12
         ' 
-        txtResult2.Location = New Point(244, 223)
-        txtResult2.Name = "txtResult2"
-        txtResult2.Size = New Size(250, 23)
-        txtResult2.TabIndex = 35
+        Button12.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button12.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button12.FlatAppearance.MouseDownBackColor = Color.Purple
+        Button12.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        Button12.FlatStyle = FlatStyle.Popup
+        Button12.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button12.ForeColor = Color.Black
+        Button12.Location = New Point(220, 257)
+        Button12.Name = "Button12"
+        Button12.Size = New Size(162, 24)
+        Button12.TabIndex = 57
+        Button12.Text = "Convert"
+        Button12.UseVisualStyleBackColor = False
         ' 
-        ' Label42
+        ' Label85
         ' 
-        Label42.AutoSize = True
-        Label42.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label42.ForeColor = Color.Black
-        Label42.Location = New Point(122, 223)
-        Label42.Name = "Label42"
-        Label42.Size = New Size(119, 21)
-        Label42.TabIndex = 34
-        Label42.Text = "Right(txt, 2)  = "
+        Label85.AutoSize = True
+        Label85.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label85.ForeColor = Color.Black
+        Label85.Location = New Point(168, 152)
+        Label85.Name = "Label85"
+        Label85.Size = New Size(49, 21)
+        Label85.TabIndex = 61
+        Label85.Text = "Input"
         ' 
-        ' txtResult1
+        ' txtTrim
         ' 
-        txtResult1.Location = New Point(244, 166)
-        txtResult1.Name = "txtResult1"
-        txtResult1.Size = New Size(250, 23)
-        txtResult1.TabIndex = 33
+        txtTrim.Font = New Font("Segoe UI", 9.75F)
+        txtTrim.Location = New Point(104, 192)
+        txtTrim.Name = "txtTrim"
+        txtTrim.PlaceholderText = "Enter Anyhing"
+        txtTrim.Size = New Size(178, 25)
+        txtTrim.TabIndex = 58
         ' 
-        ' Label43
+        ' txtTrimResult
         ' 
-        Label43.AutoSize = True
-        Label43.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label43.ForeColor = Color.Black
-        Label43.Location = New Point(123, 164)
-        Label43.Name = "Label43"
-        Label43.Size = New Size(115, 21)
-        Label43.TabIndex = 32
-        Label43.Text = "Right(txt, 5) = "
+        txtTrimResult.Font = New Font("Segoe UI", 9.75F)
+        txtTrimResult.Location = New Point(327, 192)
+        txtTrimResult.Name = "txtTrimResult"
+        txtTrimResult.PlaceholderText = "Enter Anyhing"
+        txtTrimResult.ReadOnly = True
+        txtTrimResult.Size = New Size(205, 25)
+        txtTrimResult.TabIndex = 59
         ' 
-        ' Label48
+        ' Label86
         ' 
-        Label48.AutoSize = True
-        Label48.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label48.ForeColor = Color.Black
-        Label48.Location = New Point(523, 0)
-        Label48.Name = "Label48"
-        Label48.Size = New Size(100, 21)
-        Label48.TabIndex = 31
-        Label48.Text = "RSet Format"
+        Label86.AutoSize = True
+        Label86.ForeColor = Color.Black
+        Label86.Location = New Point(290, 196)
+        Label86.Name = "Label86"
+        Label86.Size = New Size(31, 15)
+        Label86.TabIndex = 60
+        Label86.Text = "==>"
         ' 
-        ' RightPanel
+        ' StrReversePanel
         ' 
-        RightPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        RightPanel.Controls.Add(Button3)
-        RightPanel.Controls.Add(txtWord)
-        RightPanel.Controls.Add(word3)
-        RightPanel.Controls.Add(Label44)
-        RightPanel.Controls.Add(word2)
-        RightPanel.Controls.Add(Label45)
-        RightPanel.Controls.Add(word1)
-        RightPanel.Controls.Add(Label46)
-        RightPanel.Controls.Add(Label47)
-        RightPanel.Location = New Point(295, 64)
-        RightPanel.Name = "RightPanel"
-        RightPanel.Size = New Size(623, 418)
-        RightPanel.TabIndex = 46
+        StrReversePanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        StrReversePanel.Controls.Add(Label79)
+        StrReversePanel.Controls.Add(Label80)
+        StrReversePanel.Controls.Add(Button13)
+        StrReversePanel.Controls.Add(Label81)
+        StrReversePanel.Controls.Add(txtReversed)
+        StrReversePanel.Controls.Add(txtReversedResult)
+        StrReversePanel.Controls.Add(Label82)
+        StrReversePanel.Location = New Point(295, 56)
+        StrReversePanel.Name = "StrReversePanel"
+        StrReversePanel.Size = New Size(626, 426)
+        StrReversePanel.TabIndex = 55
         ' 
-        ' Button3
+        ' Label79
         ' 
-        Button3.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        Button3.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        Button3.FlatAppearance.MouseDownBackColor = Color.Purple
-        Button3.FlatAppearance.MouseOverBackColor = Color.Fuchsia
-        Button3.FlatStyle = FlatStyle.Popup
-        Button3.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button3.ForeColor = Color.Black
-        Button3.Location = New Point(228, 89)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(63, 24)
-        Button3.TabIndex = 19
-        Button3.Text = "Convert"
-        Button3.UseVisualStyleBackColor = False
+        Label79.AutoSize = True
+        Label79.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label79.ForeColor = Color.Black
+        Label79.Location = New Point(522, -1)
+        Label79.Name = "Label79"
+        Label79.Size = New Size(103, 21)
+        Label79.TabIndex = 30
+        Label79.Text = "Str Reversed"
         ' 
-        ' txtWord
+        ' Label80
         ' 
-        txtWord.Location = New Point(55, 89)
-        txtWord.Name = "txtWord"
-        txtWord.PlaceholderText = "Enter Anyhing"
-        txtWord.Size = New Size(161, 23)
-        txtWord.TabIndex = 44
+        Label80.AutoSize = True
+        Label80.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label80.ForeColor = Color.Black
+        Label80.Location = New Point(399, 155)
+        Label80.Name = "Label80"
+        Label80.Size = New Size(78, 21)
+        Label80.TabIndex = 62
+        Label80.Text = "Reversed"
         ' 
-        ' word3
+        ' Button13
         ' 
-        word3.Location = New Point(244, 280)
-        word3.Name = "word3"
-        word3.Size = New Size(250, 23)
-        word3.TabIndex = 37
+        Button13.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button13.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button13.FlatAppearance.MouseDownBackColor = Color.Purple
+        Button13.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        Button13.FlatStyle = FlatStyle.Popup
+        Button13.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button13.ForeColor = Color.Black
+        Button13.Location = New Point(220, 259)
+        Button13.Name = "Button13"
+        Button13.Size = New Size(162, 24)
+        Button13.TabIndex = 57
+        Button13.Text = "Convert"
+        Button13.UseVisualStyleBackColor = False
         ' 
-        ' Label44
+        ' Label81
         ' 
-        Label44.AutoSize = True
-        Label44.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label44.ForeColor = Color.Black
-        Label44.Location = New Point(122, 280)
-        Label44.Name = "Label44"
-        Label44.Size = New Size(124, 21)
-        Label44.TabIndex = 36
-        Label44.Text = "Right(txt, 20) = "
+        Label81.AutoSize = True
+        Label81.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label81.ForeColor = Color.Black
+        Label81.Location = New Point(168, 154)
+        Label81.Name = "Label81"
+        Label81.Size = New Size(49, 21)
+        Label81.TabIndex = 61
+        Label81.Text = "Input"
         ' 
-        ' word2
+        ' txtReversed
         ' 
-        word2.Location = New Point(244, 223)
-        word2.Name = "word2"
-        word2.Size = New Size(250, 23)
-        word2.TabIndex = 35
+        txtReversed.Font = New Font("Segoe UI", 9.75F)
+        txtReversed.Location = New Point(104, 194)
+        txtReversed.Name = "txtReversed"
+        txtReversed.PlaceholderText = "Enter Anyhing"
+        txtReversed.Size = New Size(178, 25)
+        txtReversed.TabIndex = 58
         ' 
-        ' Label45
+        ' txtReversedResult
         ' 
-        Label45.AutoSize = True
-        Label45.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label45.ForeColor = Color.Black
-        Label45.Location = New Point(122, 223)
-        Label45.Name = "Label45"
-        Label45.Size = New Size(119, 21)
-        Label45.TabIndex = 34
-        Label45.Text = "Right(txt, 2)  = "
+        txtReversedResult.Font = New Font("Segoe UI", 9.75F)
+        txtReversedResult.Location = New Point(327, 194)
+        txtReversedResult.Name = "txtReversedResult"
+        txtReversedResult.PlaceholderText = "Enter Anyhing"
+        txtReversedResult.ReadOnly = True
+        txtReversedResult.Size = New Size(205, 25)
+        txtReversedResult.TabIndex = 59
         ' 
-        ' word1
+        ' Label82
         ' 
-        word1.Location = New Point(244, 166)
-        word1.Name = "word1"
-        word1.Size = New Size(250, 23)
-        word1.TabIndex = 33
+        Label82.AutoSize = True
+        Label82.Location = New Point(290, 198)
+        Label82.Name = "Label82"
+        Label82.Size = New Size(31, 15)
+        Label82.TabIndex = 60
+        Label82.Text = "==>"
         ' 
-        ' Label46
+        ' SpacePanel
         ' 
-        Label46.AutoSize = True
-        Label46.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label46.ForeColor = Color.Black
-        Label46.Location = New Point(123, 164)
-        Label46.Name = "Label46"
-        Label46.Size = New Size(115, 21)
-        Label46.TabIndex = 32
-        Label46.Text = "Right(txt, 5) = "
+        SpacePanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        SpacePanel.Controls.Add(clearBtnForSpace)
+        SpacePanel.Controls.Add(Label61)
+        SpacePanel.Controls.Add(txtNumberSpace)
+        SpacePanel.Controls.Add(Label57)
+        SpacePanel.Controls.Add(Label58)
+        SpacePanel.Controls.Add(Label59)
+        SpacePanel.Controls.Add(txtSpaceWordResult)
+        SpacePanel.Controls.Add(Label60)
+        SpacePanel.Controls.Add(txtSpaceWord)
+        SpacePanel.Controls.Add(Button7)
+        SpacePanel.Location = New Point(296, 56)
+        SpacePanel.Name = "SpacePanel"
+        SpacePanel.Size = New Size(623, 424)
+        SpacePanel.TabIndex = 50
         ' 
-        ' Label47
+        ' clearBtnForSpace
         ' 
-        Label47.AutoSize = True
-        Label47.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label47.ForeColor = Color.Black
-        Label47.Location = New Point(518, 0)
-        Label47.Name = "Label47"
-        Label47.Size = New Size(105, 21)
-        Label47.TabIndex = 31
-        Label47.Text = "Right Format"
+        clearBtnForSpace.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        clearBtnForSpace.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        clearBtnForSpace.FlatAppearance.MouseDownBackColor = Color.Purple
+        clearBtnForSpace.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        clearBtnForSpace.FlatStyle = FlatStyle.Popup
+        clearBtnForSpace.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        clearBtnForSpace.ForeColor = Color.Black
+        clearBtnForSpace.Location = New Point(16, 14)
+        clearBtnForSpace.Name = "clearBtnForSpace"
+        clearBtnForSpace.Size = New Size(86, 24)
+        clearBtnForSpace.TabIndex = 57
+        clearBtnForSpace.Text = "Clear"
+        clearBtnForSpace.UseVisualStyleBackColor = False
+        ' 
+        ' Label61
+        ' 
+        Label61.AutoSize = True
+        Label61.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label61.ForeColor = Color.Black
+        Label61.Location = New Point(36, 125)
+        Label61.Name = "Label61"
+        Label61.Size = New Size(61, 42)
+        Label61.TabIndex = 56
+        Label61.Text = "Enter " & vbCrLf & "Spaces"
+        Label61.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' txtNumberSpace
+        ' 
+        txtNumberSpace.Font = New Font("Segoe UI", 9.75F)
+        txtNumberSpace.Location = New Point(36, 178)
+        txtNumberSpace.Name = "txtNumberSpace"
+        txtNumberSpace.PlaceholderText = "Space"
+        txtNumberSpace.Size = New Size(54, 25)
+        txtNumberSpace.TabIndex = 55
+        ' 
+        ' Label57
+        ' 
+        Label57.AutoSize = True
+        Label57.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label57.ForeColor = Color.Black
+        Label57.Location = New Point(355, 136)
+        Label57.Name = "Label57"
+        Label57.Size = New Size(159, 21)
+        Label57.TabIndex = 54
+        Label57.Text = "No Space Right Side"
+        ' 
+        ' Label58
+        ' 
+        Label58.AutoSize = True
+        Label58.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label58.ForeColor = Color.Black
+        Label58.Location = New Point(514, 0)
+        Label58.Name = "Label58"
+        Label58.Size = New Size(110, 21)
+        Label58.TabIndex = 31
+        Label58.Text = "Space Format"
+        ' 
+        ' Label59
+        ' 
+        Label59.AutoSize = True
+        Label59.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label59.ForeColor = Color.Black
+        Label59.Location = New Point(173, 136)
+        Label59.Name = "Label59"
+        Label59.Size = New Size(49, 21)
+        Label59.TabIndex = 53
+        Label59.Text = "Input"
+        ' 
+        ' txtSpaceWordResult
+        ' 
+        txtSpaceWordResult.Font = New Font("Segoe UI", 9.75F)
+        txtSpaceWordResult.Location = New Point(334, 178)
+        txtSpaceWordResult.Name = "txtSpaceWordResult"
+        txtSpaceWordResult.PlaceholderText = "Enter Anyhing"
+        txtSpaceWordResult.ReadOnly = True
+        txtSpaceWordResult.Size = New Size(214, 25)
+        txtSpaceWordResult.TabIndex = 51
+        ' 
+        ' Label60
+        ' 
+        Label60.AutoSize = True
+        Label60.Location = New Point(297, 182)
+        Label60.Name = "Label60"
+        Label60.Size = New Size(31, 15)
+        Label60.TabIndex = 52
+        Label60.Text = "==>"
+        ' 
+        ' txtSpaceWord
+        ' 
+        txtSpaceWord.Font = New Font("Segoe UI", 9.75F)
+        txtSpaceWord.Location = New Point(111, 178)
+        txtSpaceWord.Name = "txtSpaceWord"
+        txtSpaceWord.PlaceholderText = "Enter Anyhing"
+        txtSpaceWord.Size = New Size(178, 25)
+        txtSpaceWord.TabIndex = 50
+        ' 
+        ' Button7
+        ' 
+        Button7.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button7.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button7.FlatAppearance.MouseDownBackColor = Color.Purple
+        Button7.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        Button7.FlatStyle = FlatStyle.Popup
+        Button7.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button7.ForeColor = Color.Black
+        Button7.Location = New Point(235, 243)
+        Button7.Name = "Button7"
+        Button7.Size = New Size(162, 24)
+        Button7.TabIndex = 49
+        Button7.Text = "Convert"
+        Button7.UseVisualStyleBackColor = False
+        ' 
+        ' AscPanel
+        ' 
+        AscPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        AscPanel.Controls.Add(Label16)
+        AscPanel.Controls.Add(Label3)
+        AscPanel.Controls.Add(txtASCWresult)
+        AscPanel.Controls.Add(Label4)
+        AscPanel.Controls.Add(txtASCW)
+        AscPanel.Controls.Add(Button1)
+        AscPanel.Controls.Add(Label2)
+        AscPanel.Controls.Add(txtASCresult)
+        AscPanel.Controls.Add(Label1)
+        AscPanel.Controls.Add(txtASC)
+        AscPanel.Controls.Add(ascConvertBtn)
+        AscPanel.Location = New Point(295, 56)
+        AscPanel.Name = "AscPanel"
+        AscPanel.Size = New Size(623, 426)
+        AscPanel.TabIndex = 11
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label16.ForeColor = Color.Black
+        Label16.Location = New Point(537, -3)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(86, 21)
+        Label16.TabIndex = 30
+        Label16.Text = "Asc/AScW"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.Black
+        Label3.Location = New Point(3, 222)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(309, 21)
+        Label3.TabIndex = 28
+        Label3.Text = "ASCW= Can convert variety of characters"
+        ' 
+        ' txtASCWresult
+        ' 
+        txtASCWresult.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtASCWresult.Location = New Point(331, 275)
+        txtASCWresult.Name = "txtASCWresult"
+        txtASCWresult.ReadOnly = True
+        txtASCWresult.Size = New Size(130, 25)
+        txtASCWresult.TabIndex = 27
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(294, 281)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(31, 15)
+        Label4.TabIndex = 26
+        Label4.Text = "==>"
+        ' 
+        ' txtASCW
+        ' 
+        txtASCW.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtASCW.Location = New Point(95, 276)
+        txtASCW.Name = "txtASCW"
+        txtASCW.PlaceholderText = "Enter Text Here"
+        txtASCW.Size = New Size(193, 25)
+        txtASCW.TabIndex = 25
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button1.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button1.FlatAppearance.MouseDownBackColor = Color.Purple
+        Button1.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Tahoma", 9.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Button1.ForeColor = Color.Black
+        Button1.Location = New Point(219, 327)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(154, 29)
+        Button1.TabIndex = 24
+        Button1.Text = "ASCW Convert"
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.Black
+        Label2.Location = New Point(3, 14)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(307, 21)
+        Label2.TabIndex = 23
+        Label2.Text = "ASC = Mainly converts english chars only"
+        ' 
+        ' txtASCresult
+        ' 
+        txtASCresult.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtASCresult.Location = New Point(331, 67)
+        txtASCresult.Name = "txtASCresult"
+        txtASCresult.ReadOnly = True
+        txtASCresult.Size = New Size(130, 25)
+        txtASCresult.TabIndex = 22
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(294, 73)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(31, 15)
+        Label1.TabIndex = 21
+        Label1.Text = "==>"
+        ' 
+        ' txtASC
+        ' 
+        txtASC.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtASC.Location = New Point(95, 68)
+        txtASC.Name = "txtASC"
+        txtASC.PlaceholderText = "Enter Text Here"
+        txtASC.Size = New Size(193, 25)
+        txtASC.TabIndex = 20
+        ' 
+        ' ascConvertBtn
+        ' 
+        ascConvertBtn.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        ascConvertBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        ascConvertBtn.FlatAppearance.MouseDownBackColor = Color.Purple
+        ascConvertBtn.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        ascConvertBtn.FlatStyle = FlatStyle.Flat
+        ascConvertBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        ascConvertBtn.ForeColor = Color.Black
+        ascConvertBtn.Location = New Point(219, 119)
+        ascConvertBtn.Name = "ascConvertBtn"
+        ascConvertBtn.Size = New Size(154, 29)
+        ascConvertBtn.TabIndex = 19
+        ascConvertBtn.Text = "ASC Convert"
+        ascConvertBtn.UseVisualStyleBackColor = False
+        ' 
+        ' filterPanel
+        ' 
+        filterPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        filterPanel.Controls.Add(Label18)
+        filterPanel.Controls.Add(Label11)
+        filterPanel.Controls.Add(Label10)
+        filterPanel.Controls.Add(filtbtn)
+        filterPanel.Controls.Add(txtFilterItems)
+        filterPanel.Controls.Add(addBtn)
+        filterPanel.Controls.Add(FilterItems)
+        filterPanel.Controls.Add(txtAddItems)
+        filterPanel.Controls.Add(AddItems)
+        filterPanel.Location = New Point(295, 55)
+        filterPanel.Name = "filterPanel"
+        filterPanel.Size = New Size(623, 427)
+        filterPanel.TabIndex = 13
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoSize = True
+        Label18.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label18.ForeColor = Color.Black
+        Label18.Location = New Point(576, -3)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(47, 21)
+        Label18.TabIndex = 30
+        Label18.Text = "Filter"
+        ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label11.ForeColor = Color.Black
+        Label11.Location = New Point(399, 14)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(111, 21)
+        Label11.TabIndex = 23
+        Label11.Text = "Filtered Items"
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.ForeColor = Color.Black
+        Label10.Location = New Point(85, 14)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(86, 21)
+        Label10.TabIndex = 22
+        Label10.Text = "Add Items"
+        ' 
+        ' filtbtn
+        ' 
+        filtbtn.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        filtbtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        filtbtn.FlatAppearance.MouseDownBackColor = Color.Purple
+        filtbtn.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        filtbtn.FlatStyle = FlatStyle.Popup
+        filtbtn.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        filtbtn.ForeColor = Color.Black
+        filtbtn.Location = New Point(391, 344)
+        filtbtn.Name = "filtbtn"
+        filtbtn.Size = New Size(147, 25)
+        filtbtn.TabIndex = 21
+        filtbtn.Text = "Filter Items"
+        filtbtn.UseVisualStyleBackColor = False
+        ' 
+        ' txtFilterItems
+        ' 
+        txtFilterItems.Font = New Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtFilterItems.Location = New Point(372, 303)
+        txtFilterItems.Name = "txtFilterItems"
+        txtFilterItems.PlaceholderText = "Search an Item"
+        txtFilterItems.Size = New Size(186, 22)
+        txtFilterItems.TabIndex = 20
+        ' 
+        ' addBtn
+        ' 
+        addBtn.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        addBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        addBtn.FlatAppearance.MouseDownBackColor = Color.Purple
+        addBtn.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        addBtn.FlatStyle = FlatStyle.Popup
+        addBtn.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        addBtn.ForeColor = Color.Black
+        addBtn.Location = New Point(59, 344)
+        addBtn.Name = "addBtn"
+        addBtn.Size = New Size(147, 25)
+        addBtn.TabIndex = 19
+        addBtn.Text = "Add Items"
+        addBtn.UseVisualStyleBackColor = False
+        ' 
+        ' FilterItems
+        ' 
+        FilterItems.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        FilterItems.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        FilterItems.ForeColor = Color.Black
+        FilterItems.FormattingEnabled = True
+        FilterItems.Location = New Point(361, 51)
+        FilterItems.Name = "FilterItems"
+        FilterItems.Size = New Size(206, 235)
+        FilterItems.TabIndex = 4
+        ' 
+        ' txtAddItems
+        ' 
+        txtAddItems.Font = New Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtAddItems.Location = New Point(43, 303)
+        txtAddItems.Name = "txtAddItems"
+        txtAddItems.PlaceholderText = "Add Items"
+        txtAddItems.Size = New Size(186, 22)
+        txtAddItems.TabIndex = 2
+        ' 
+        ' AddItems
+        ' 
+        AddItems.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        AddItems.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        AddItems.ForeColor = Color.Black
+        AddItems.FormattingEnabled = True
+        AddItems.Location = New Point(32, 51)
+        AddItems.Name = "AddItems"
+        AddItems.Size = New Size(206, 235)
+        AddItems.TabIndex = 0
+        ' 
+        ' SplitPanel
+        ' 
+        SplitPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        SplitPanel.Controls.Add(SplitTable)
+        SplitPanel.Controls.Add(Label64)
+        SplitPanel.Controls.Add(Label65)
+        SplitPanel.Controls.Add(Label66)
+        SplitPanel.Controls.Add(txtSplit)
+        SplitPanel.Controls.Add(splitBtnBtn)
+        SplitPanel.Location = New Point(295, 56)
+        SplitPanel.Name = "SplitPanel"
+        SplitPanel.Size = New Size(623, 424)
+        SplitPanel.TabIndex = 51
+        ' 
+        ' SplitTable
+        ' 
+        SplitTable.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        SplitTable.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        SplitTable.FormattingEnabled = True
+        SplitTable.Location = New Point(335, 59)
+        SplitTable.Name = "SplitTable"
+        SplitTable.Size = New Size(233, 277)
+        SplitTable.TabIndex = 54
+        ' 
+        ' Label64
+        ' 
+        Label64.AutoSize = True
+        Label64.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label64.ForeColor = Color.Black
+        Label64.Location = New Point(581, 0)
+        Label64.Name = "Label64"
+        Label64.Size = New Size(43, 21)
+        Label64.TabIndex = 31
+        Label64.Text = "Split"
+        ' 
+        ' Label65
+        ' 
+        Label65.AutoSize = True
+        Label65.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label65.ForeColor = Color.Black
+        Label65.Location = New Point(123, 146)
+        Label65.Name = "Label65"
+        Label65.Size = New Size(49, 21)
+        Label65.TabIndex = 53
+        Label65.Text = "Input"
+        ' 
+        ' Label66
+        ' 
+        Label66.AutoSize = True
+        Label66.Location = New Point(257, 183)
+        Label66.Name = "Label66"
+        Label66.Size = New Size(55, 15)
+        Label66.TabIndex = 52
+        Label66.Text = "=====>"
+        ' 
+        ' txtSplit
+        ' 
+        txtSplit.Font = New Font("Segoe UI", 9.75F)
+        txtSplit.Location = New Point(55, 180)
+        txtSplit.Name = "txtSplit"
+        txtSplit.PlaceholderText = "Enter Anyhing"
+        txtSplit.Size = New Size(178, 25)
+        txtSplit.TabIndex = 50
+        ' 
+        ' splitBtnBtn
+        ' 
+        splitBtnBtn.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        splitBtnBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        splitBtnBtn.FlatAppearance.MouseDownBackColor = Color.Purple
+        splitBtnBtn.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        splitBtnBtn.FlatStyle = FlatStyle.Popup
+        splitBtnBtn.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        splitBtnBtn.ForeColor = Color.Black
+        splitBtnBtn.Location = New Point(90, 218)
+        splitBtnBtn.Name = "splitBtnBtn"
+        splitBtnBtn.Size = New Size(116, 24)
+        splitBtnBtn.TabIndex = 49
+        splitBtnBtn.Text = "Convert"
+        splitBtnBtn.UseVisualStyleBackColor = False
+        ' 
+        ' StrCompPanel
+        ' 
+        StrCompPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        StrCompPanel.Controls.Add(Label63)
+        StrCompPanel.Controls.Add(Label62)
+        StrCompPanel.Controls.Add(strCompResult)
+        StrCompPanel.Controls.Add(strComp2)
+        StrCompPanel.Controls.Add(Label67)
+        StrCompPanel.Controls.Add(Label68)
+        StrCompPanel.Controls.Add(Label69)
+        StrCompPanel.Controls.Add(strComp1)
+        StrCompPanel.Controls.Add(Button9)
+        StrCompPanel.Location = New Point(295, 55)
+        StrCompPanel.Name = "StrCompPanel"
+        StrCompPanel.Size = New Size(623, 424)
+        StrCompPanel.TabIndex = 52
+        ' 
+        ' Label63
+        ' 
+        Label63.AutoSize = True
+        Label63.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label63.ForeColor = Color.Black
+        Label63.Location = New Point(487, 147)
+        Label63.Name = "Label63"
+        Label63.Size = New Size(62, 21)
+        Label63.TabIndex = 57
+        Label63.Text = "Output"
+        ' 
+        ' Label62
+        ' 
+        Label62.AutoSize = True
+        Label62.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label62.ForeColor = Color.Black
+        Label62.Location = New Point(277, 147)
+        Label62.Name = "Label62"
+        Label62.Size = New Size(62, 21)
+        Label62.TabIndex = 56
+        Label62.Text = "Input 2"
+        ' 
+        ' strCompResult
+        ' 
+        strCompResult.Font = New Font("Segoe UI", 9.75F)
+        strCompResult.Location = New Point(470, 182)
+        strCompResult.Name = "strCompResult"
+        strCompResult.PlaceholderText = "Enter Anyhing"
+        strCompResult.Size = New Size(95, 25)
+        strCompResult.TabIndex = 55
+        ' 
+        ' strComp2
+        ' 
+        strComp2.Font = New Font("Segoe UI", 9.75F)
+        strComp2.Location = New Point(220, 182)
+        strComp2.Name = "strComp2"
+        strComp2.PlaceholderText = "Enter Anyhing"
+        strComp2.Size = New Size(178, 25)
+        strComp2.TabIndex = 54
+        ' 
+        ' Label67
+        ' 
+        Label67.AutoSize = True
+        Label67.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label67.ForeColor = Color.Black
+        Label67.Location = New Point(545, 0)
+        Label67.Name = "Label67"
+        Label67.Size = New Size(79, 21)
+        Label67.TabIndex = 31
+        Label67.Text = "Str Comp"
+        ' 
+        ' Label68
+        ' 
+        Label68.AutoSize = True
+        Label68.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label68.ForeColor = Color.Black
+        Label68.Location = New Point(76, 147)
+        Label68.Name = "Label68"
+        Label68.Size = New Size(59, 21)
+        Label68.TabIndex = 53
+        Label68.Text = "Input 1"
+        ' 
+        ' Label69
+        ' 
+        Label69.AutoSize = True
+        Label69.Location = New Point(409, 187)
+        Label69.Name = "Label69"
+        Label69.Size = New Size(55, 15)
+        Label69.TabIndex = 52
+        Label69.Text = "=====>"
+        ' 
+        ' strComp1
+        ' 
+        strComp1.Font = New Font("Segoe UI", 9.75F)
+        strComp1.Location = New Point(17, 181)
+        strComp1.Name = "strComp1"
+        strComp1.PlaceholderText = "Enter Anyhing"
+        strComp1.Size = New Size(178, 25)
+        strComp1.TabIndex = 50
+        ' 
+        ' Button9
+        ' 
+        Button9.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button9.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button9.FlatAppearance.MouseDownBackColor = Color.Purple
+        Button9.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        Button9.FlatStyle = FlatStyle.Popup
+        Button9.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button9.ForeColor = Color.Black
+        Button9.Location = New Point(140, 239)
+        Button9.Name = "Button9"
+        Button9.Size = New Size(116, 24)
+        Button9.TabIndex = 49
+        Button9.Text = "Convert"
+        Button9.UseVisualStyleBackColor = False
         ' 
         ' FormatPercentPanel
         ' 
@@ -573,9 +1258,9 @@ Partial Class WEEK11_12
         FormatPercentPanel.Controls.Add(num01)
         FormatPercentPanel.Controls.Add(Label39)
         FormatPercentPanel.Controls.Add(Label40)
-        FormatPercentPanel.Location = New Point(295, 64)
+        FormatPercentPanel.Location = New Point(295, 55)
         FormatPercentPanel.Name = "FormatPercentPanel"
-        FormatPercentPanel.Size = New Size(623, 418)
+        FormatPercentPanel.Size = New Size(623, 427)
         FormatPercentPanel.TabIndex = 45
         ' 
         ' percentBtn
@@ -721,6 +1406,626 @@ Partial Class WEEK11_12
         Label40.TabIndex = 31
         Label40.Text = "Format Percent"
         ' 
+        ' StrConvPanel
+        ' 
+        StrConvPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        StrConvPanel.Controls.Add(Button8)
+        StrConvPanel.Controls.Add(txtconv)
+        StrConvPanel.Controls.Add(conv3)
+        StrConvPanel.Controls.Add(Label72)
+        StrConvPanel.Controls.Add(Label70)
+        StrConvPanel.Controls.Add(conv1)
+        StrConvPanel.Controls.Add(Label73)
+        StrConvPanel.Location = New Point(295, 55)
+        StrConvPanel.Name = "StrConvPanel"
+        StrConvPanel.Size = New Size(623, 424)
+        StrConvPanel.TabIndex = 53
+        ' 
+        ' Button8
+        ' 
+        Button8.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button8.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button8.FlatAppearance.MouseDownBackColor = Color.Purple
+        Button8.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        Button8.FlatStyle = FlatStyle.Popup
+        Button8.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button8.ForeColor = Color.Black
+        Button8.Location = New Point(277, 127)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(63, 24)
+        Button8.TabIndex = 45
+        Button8.Text = "Convert"
+        Button8.UseVisualStyleBackColor = False
+        ' 
+        ' txtconv
+        ' 
+        txtconv.Location = New Point(104, 127)
+        txtconv.Name = "txtconv"
+        txtconv.PlaceholderText = "Enter Anything"
+        txtconv.Size = New Size(161, 23)
+        txtconv.TabIndex = 46
+        ' 
+        ' conv3
+        ' 
+        conv3.Location = New Point(266, 249)
+        conv3.Name = "conv3"
+        conv3.Size = New Size(250, 23)
+        conv3.TabIndex = 43
+        ' 
+        ' Label72
+        ' 
+        Label72.AutoSize = True
+        Label72.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label72.ForeColor = Color.Black
+        Label72.Location = New Point(545, 0)
+        Label72.Name = "Label72"
+        Label72.Size = New Size(79, 21)
+        Label72.TabIndex = 31
+        Label72.Text = "Str Comp"
+        ' 
+        ' Label70
+        ' 
+        Label70.AutoSize = True
+        Label70.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label70.ForeColor = Color.Black
+        Label70.Location = New Point(107, 245)
+        Label70.Name = "Label70"
+        Label70.Size = New Size(151, 21)
+        Label70.TabIndex = 42
+        Label70.Text = "ToLowerCase(val) ="
+        ' 
+        ' conv1
+        ' 
+        conv1.Location = New Point(266, 194)
+        conv1.Name = "conv1"
+        conv1.Size = New Size(250, 23)
+        conv1.TabIndex = 39
+        ' 
+        ' Label73
+        ' 
+        Label73.AutoSize = True
+        Label73.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label73.ForeColor = Color.Black
+        Label73.Location = New Point(104, 190)
+        Label73.Name = "Label73"
+        Label73.Size = New Size(156, 21)
+        Label73.TabIndex = 38
+        Label73.Text = "ToUpperCase(val) = "
+        ' 
+        ' RTrimPanel
+        ' 
+        RTrimPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        RTrimPanel.Controls.Add(Label49)
+        RTrimPanel.Controls.Add(Label52)
+        RTrimPanel.Controls.Add(Label50)
+        RTrimPanel.Controls.Add(txtRtrimResult)
+        RTrimPanel.Controls.Add(Label51)
+        RTrimPanel.Controls.Add(txtRtrim)
+        RTrimPanel.Controls.Add(Button5)
+        RTrimPanel.Location = New Point(295, 58)
+        RTrimPanel.Name = "RTrimPanel"
+        RTrimPanel.Size = New Size(623, 421)
+        RTrimPanel.TabIndex = 48
+        ' 
+        ' Label49
+        ' 
+        Label49.AutoSize = True
+        Label49.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label49.ForeColor = Color.Black
+        Label49.Location = New Point(335, 134)
+        Label49.Name = "Label49"
+        Label49.Size = New Size(159, 21)
+        Label49.TabIndex = 54
+        Label49.Text = "No Space Right Side"
+        ' 
+        ' Label52
+        ' 
+        Label52.AutoSize = True
+        Label52.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label52.ForeColor = Color.Black
+        Label52.Location = New Point(516, 0)
+        Label52.Name = "Label52"
+        Label52.Size = New Size(108, 21)
+        Label52.TabIndex = 31
+        Label52.Text = "RTrim Format"
+        ' 
+        ' Label50
+        ' 
+        Label50.AutoSize = True
+        Label50.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label50.ForeColor = Color.Black
+        Label50.Location = New Point(153, 134)
+        Label50.Name = "Label50"
+        Label50.Size = New Size(49, 21)
+        Label50.TabIndex = 53
+        Label50.Text = "Input"
+        ' 
+        ' txtRtrimResult
+        ' 
+        txtRtrimResult.Font = New Font("Segoe UI", 9.75F)
+        txtRtrimResult.Location = New Point(314, 176)
+        txtRtrimResult.Name = "txtRtrimResult"
+        txtRtrimResult.PlaceholderText = "Enter Anyhing"
+        txtRtrimResult.ReadOnly = True
+        txtRtrimResult.Size = New Size(214, 25)
+        txtRtrimResult.TabIndex = 51
+        ' 
+        ' Label51
+        ' 
+        Label51.AutoSize = True
+        Label51.Location = New Point(277, 180)
+        Label51.Name = "Label51"
+        Label51.Size = New Size(31, 15)
+        Label51.TabIndex = 52
+        Label51.Text = "==>"
+        ' 
+        ' txtRtrim
+        ' 
+        txtRtrim.Font = New Font("Segoe UI", 9.75F)
+        txtRtrim.Location = New Point(91, 176)
+        txtRtrim.Name = "txtRtrim"
+        txtRtrim.PlaceholderText = "Enter Anyhing"
+        txtRtrim.Size = New Size(178, 25)
+        txtRtrim.TabIndex = 50
+        ' 
+        ' Button5
+        ' 
+        Button5.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button5.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button5.FlatAppearance.MouseDownBackColor = Color.Purple
+        Button5.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        Button5.FlatStyle = FlatStyle.Popup
+        Button5.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button5.ForeColor = Color.Black
+        Button5.Location = New Point(215, 241)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(162, 24)
+        Button5.TabIndex = 49
+        Button5.Text = "Convert"
+        Button5.UseVisualStyleBackColor = False
+        ' 
+        ' UcasePanel
+        ' 
+        UcasePanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        UcasePanel.Controls.Add(Label55)
+        UcasePanel.Controls.Add(Label54)
+        UcasePanel.Controls.Add(Label53)
+        UcasePanel.Controls.Add(txtUcaseResult)
+        UcasePanel.Controls.Add(Button6)
+        UcasePanel.Controls.Add(txtUcase)
+        UcasePanel.Controls.Add(Label56)
+        UcasePanel.Location = New Point(296, 58)
+        UcasePanel.Name = "UcasePanel"
+        UcasePanel.Size = New Size(623, 424)
+        UcasePanel.TabIndex = 49
+        ' 
+        ' Label55
+        ' 
+        Label55.AutoSize = True
+        Label55.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label55.ForeColor = Color.Black
+        Label55.Location = New Point(348, 137)
+        Label55.Name = "Label55"
+        Label55.Size = New Size(145, 21)
+        Label55.TabIndex = 48
+        Label55.Text = "ALL CAPS OUTPUT"
+        ' 
+        ' Label54
+        ' 
+        Label54.AutoSize = True
+        Label54.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label54.ForeColor = Color.Black
+        Label54.Location = New Point(156, 137)
+        Label54.Name = "Label54"
+        Label54.Size = New Size(49, 21)
+        Label54.TabIndex = 47
+        Label54.Text = "Input"
+        ' 
+        ' Label53
+        ' 
+        Label53.AutoSize = True
+        Label53.Location = New Point(280, 183)
+        Label53.Name = "Label53"
+        Label53.Size = New Size(31, 15)
+        Label53.TabIndex = 46
+        Label53.Text = "==>"
+        ' 
+        ' txtUcaseResult
+        ' 
+        txtUcaseResult.Font = New Font("Segoe UI", 9.75F)
+        txtUcaseResult.Location = New Point(317, 179)
+        txtUcaseResult.Name = "txtUcaseResult"
+        txtUcaseResult.PlaceholderText = "Enter Anyhing"
+        txtUcaseResult.ReadOnly = True
+        txtUcaseResult.Size = New Size(214, 25)
+        txtUcaseResult.TabIndex = 45
+        ' 
+        ' Button6
+        ' 
+        Button6.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button6.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button6.FlatAppearance.MouseDownBackColor = Color.Purple
+        Button6.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        Button6.FlatStyle = FlatStyle.Popup
+        Button6.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button6.ForeColor = Color.Black
+        Button6.Location = New Point(218, 244)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(162, 24)
+        Button6.TabIndex = 19
+        Button6.Text = "Convert"
+        Button6.UseVisualStyleBackColor = False
+        ' 
+        ' txtUcase
+        ' 
+        txtUcase.Font = New Font("Segoe UI", 9.75F)
+        txtUcase.Location = New Point(94, 179)
+        txtUcase.Name = "txtUcase"
+        txtUcase.PlaceholderText = "Enter Anyhing"
+        txtUcase.Size = New Size(178, 25)
+        txtUcase.TabIndex = 44
+        ' 
+        ' Label56
+        ' 
+        Label56.AutoSize = True
+        Label56.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label56.ForeColor = Color.Black
+        Label56.Location = New Point(516, 0)
+        Label56.Name = "Label56"
+        Label56.Size = New Size(109, 21)
+        Label56.TabIndex = 31
+        Label56.Text = "Ucase Format"
+        ' 
+        ' characterPanel
+        ' 
+        characterPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        characterPanel.Controls.Add(Label17)
+        characterPanel.Controls.Add(Label5)
+        characterPanel.Controls.Add(txtCHRWresult)
+        characterPanel.Controls.Add(txtCHRW)
+        characterPanel.Controls.Add(Label6)
+        characterPanel.Controls.Add(CHRW)
+        characterPanel.Controls.Add(Label8)
+        characterPanel.Controls.Add(txtCHRresult)
+        characterPanel.Controls.Add(Label9)
+        characterPanel.Controls.Add(txtCHR)
+        characterPanel.Controls.Add(chrConvert)
+        characterPanel.Location = New Point(295, 55)
+        characterPanel.Name = "characterPanel"
+        characterPanel.Size = New Size(623, 427)
+        characterPanel.TabIndex = 12
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label17.ForeColor = Color.Black
+        Label17.Location = New Point(541, -3)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(82, 21)
+        Label17.TabIndex = 30
+        Label17.Text = "Chr/ChrW"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.ForeColor = Color.Black
+        Label5.Location = New Point(3, 222)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(399, 21)
+        Label5.TabIndex = 28
+        Label5.Text = "CHRW= Can convert variety of characters to numbers"
+        ' 
+        ' txtCHRWresult
+        ' 
+        txtCHRWresult.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtCHRWresult.Location = New Point(331, 275)
+        txtCHRWresult.Name = "txtCHRWresult"
+        txtCHRWresult.ReadOnly = True
+        txtCHRWresult.Size = New Size(130, 25)
+        txtCHRWresult.TabIndex = 27
+        ' 
+        ' txtCHRW
+        ' 
+        txtCHRW.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtCHRW.Location = New Point(95, 276)
+        txtCHRW.Name = "txtCHRW"
+        txtCHRW.PlaceholderText = "Enter Text Here"
+        txtCHRW.Size = New Size(193, 25)
+        txtCHRW.TabIndex = 25
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Location = New Point(294, 281)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(31, 15)
+        Label6.TabIndex = 26
+        Label6.Text = "==>"
+        ' 
+        ' CHRW
+        ' 
+        CHRW.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        CHRW.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        CHRW.FlatAppearance.MouseDownBackColor = Color.Purple
+        CHRW.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        CHRW.FlatStyle = FlatStyle.Flat
+        CHRW.Font = New Font("Tahoma", 9.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        CHRW.ForeColor = Color.Black
+        CHRW.Location = New Point(219, 327)
+        CHRW.Name = "CHRW"
+        CHRW.Size = New Size(154, 29)
+        CHRW.TabIndex = 24
+        CHRW.Text = "CHRW Convert"
+        CHRW.UseVisualStyleBackColor = False
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label8.ForeColor = Color.Black
+        Label8.Location = New Point(3, 14)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(390, 21)
+        Label8.TabIndex = 23
+        Label8.Text = "Chr = Mainly converts english chars to numbers only"
+        ' 
+        ' txtCHRresult
+        ' 
+        txtCHRresult.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtCHRresult.Location = New Point(331, 67)
+        txtCHRresult.Name = "txtCHRresult"
+        txtCHRresult.ReadOnly = True
+        txtCHRresult.Size = New Size(130, 25)
+        txtCHRresult.TabIndex = 22
+        ' 
+        ' Label9
+        ' 
+        Label9.AutoSize = True
+        Label9.Location = New Point(294, 73)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(31, 15)
+        Label9.TabIndex = 21
+        Label9.Text = "==>"
+        ' 
+        ' txtCHR
+        ' 
+        txtCHR.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtCHR.Location = New Point(95, 68)
+        txtCHR.Name = "txtCHR"
+        txtCHR.PlaceholderText = "Enter Text Here"
+        txtCHR.Size = New Size(193, 25)
+        txtCHR.TabIndex = 20
+        ' 
+        ' chrConvert
+        ' 
+        chrConvert.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        chrConvert.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        chrConvert.FlatAppearance.MouseDownBackColor = Color.Purple
+        chrConvert.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        chrConvert.FlatStyle = FlatStyle.Flat
+        chrConvert.Font = New Font("Tahoma", 9.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        chrConvert.ForeColor = Color.Black
+        chrConvert.Location = New Point(219, 119)
+        chrConvert.Name = "chrConvert"
+        chrConvert.Size = New Size(154, 29)
+        chrConvert.TabIndex = 19
+        chrConvert.Text = "CHR Convert"
+        chrConvert.UseVisualStyleBackColor = False
+        ' 
+        ' RsetPanel
+        ' 
+        RsetPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        RsetPanel.Controls.Add(btnRSet)
+        RsetPanel.Controls.Add(txtword1)
+        RsetPanel.Controls.Add(txtResult3)
+        RsetPanel.Controls.Add(Label41)
+        RsetPanel.Controls.Add(txtResult2)
+        RsetPanel.Controls.Add(Label42)
+        RsetPanel.Controls.Add(txtResult1)
+        RsetPanel.Controls.Add(Label43)
+        RsetPanel.Controls.Add(Label48)
+        RsetPanel.Location = New Point(295, 55)
+        RsetPanel.Name = "RsetPanel"
+        RsetPanel.Size = New Size(623, 427)
+        RsetPanel.TabIndex = 47
+        ' 
+        ' btnRSet
+        ' 
+        btnRSet.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        btnRSet.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        btnRSet.FlatAppearance.MouseDownBackColor = Color.Purple
+        btnRSet.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        btnRSet.FlatStyle = FlatStyle.Popup
+        btnRSet.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnRSet.ForeColor = Color.Black
+        btnRSet.Location = New Point(228, 89)
+        btnRSet.Name = "btnRSet"
+        btnRSet.Size = New Size(63, 24)
+        btnRSet.TabIndex = 19
+        btnRSet.Text = "Convert"
+        btnRSet.UseVisualStyleBackColor = False
+        ' 
+        ' txtword1
+        ' 
+        txtword1.Location = New Point(55, 89)
+        txtword1.Name = "txtword1"
+        txtword1.PlaceholderText = "Enter Anyhing"
+        txtword1.Size = New Size(161, 23)
+        txtword1.TabIndex = 44
+        ' 
+        ' txtResult3
+        ' 
+        txtResult3.Location = New Point(244, 280)
+        txtResult3.Name = "txtResult3"
+        txtResult3.Size = New Size(250, 23)
+        txtResult3.TabIndex = 37
+        ' 
+        ' Label41
+        ' 
+        Label41.AutoSize = True
+        Label41.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label41.ForeColor = Color.Black
+        Label41.Location = New Point(122, 280)
+        Label41.Name = "Label41"
+        Label41.Size = New Size(124, 21)
+        Label41.TabIndex = 36
+        Label41.Text = "Right(txt, 20) = "
+        ' 
+        ' txtResult2
+        ' 
+        txtResult2.Location = New Point(244, 223)
+        txtResult2.Name = "txtResult2"
+        txtResult2.Size = New Size(250, 23)
+        txtResult2.TabIndex = 35
+        ' 
+        ' Label42
+        ' 
+        Label42.AutoSize = True
+        Label42.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label42.ForeColor = Color.Black
+        Label42.Location = New Point(122, 223)
+        Label42.Name = "Label42"
+        Label42.Size = New Size(119, 21)
+        Label42.TabIndex = 34
+        Label42.Text = "Right(txt, 2)  = "
+        ' 
+        ' txtResult1
+        ' 
+        txtResult1.Location = New Point(244, 166)
+        txtResult1.Name = "txtResult1"
+        txtResult1.Size = New Size(250, 23)
+        txtResult1.TabIndex = 33
+        ' 
+        ' Label43
+        ' 
+        Label43.AutoSize = True
+        Label43.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label43.ForeColor = Color.Black
+        Label43.Location = New Point(123, 164)
+        Label43.Name = "Label43"
+        Label43.Size = New Size(115, 21)
+        Label43.TabIndex = 32
+        Label43.Text = "Right(txt, 5) = "
+        ' 
+        ' Label48
+        ' 
+        Label48.AutoSize = True
+        Label48.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label48.ForeColor = Color.Black
+        Label48.Location = New Point(523, 0)
+        Label48.Name = "Label48"
+        Label48.Size = New Size(100, 21)
+        Label48.TabIndex = 31
+        Label48.Text = "RSet Format"
+        ' 
+        ' RightPanel
+        ' 
+        RightPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        RightPanel.Controls.Add(Button3)
+        RightPanel.Controls.Add(txtWord)
+        RightPanel.Controls.Add(word3)
+        RightPanel.Controls.Add(Label44)
+        RightPanel.Controls.Add(word2)
+        RightPanel.Controls.Add(Label45)
+        RightPanel.Controls.Add(word1)
+        RightPanel.Controls.Add(Label46)
+        RightPanel.Controls.Add(Label47)
+        RightPanel.Location = New Point(295, 56)
+        RightPanel.Name = "RightPanel"
+        RightPanel.Size = New Size(623, 426)
+        RightPanel.TabIndex = 46
+        ' 
+        ' Button3
+        ' 
+        Button3.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button3.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
+        Button3.FlatAppearance.MouseDownBackColor = Color.Purple
+        Button3.FlatAppearance.MouseOverBackColor = Color.Fuchsia
+        Button3.FlatStyle = FlatStyle.Popup
+        Button3.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button3.ForeColor = Color.Black
+        Button3.Location = New Point(228, 89)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(63, 24)
+        Button3.TabIndex = 19
+        Button3.Text = "Convert"
+        Button3.UseVisualStyleBackColor = False
+        ' 
+        ' txtWord
+        ' 
+        txtWord.Location = New Point(55, 89)
+        txtWord.Name = "txtWord"
+        txtWord.PlaceholderText = "Enter Anyhing"
+        txtWord.Size = New Size(161, 23)
+        txtWord.TabIndex = 44
+        ' 
+        ' word3
+        ' 
+        word3.Location = New Point(244, 280)
+        word3.Name = "word3"
+        word3.Size = New Size(250, 23)
+        word3.TabIndex = 37
+        ' 
+        ' Label44
+        ' 
+        Label44.AutoSize = True
+        Label44.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label44.ForeColor = Color.Black
+        Label44.Location = New Point(122, 280)
+        Label44.Name = "Label44"
+        Label44.Size = New Size(124, 21)
+        Label44.TabIndex = 36
+        Label44.Text = "Right(txt, 20) = "
+        ' 
+        ' word2
+        ' 
+        word2.Location = New Point(244, 223)
+        word2.Name = "word2"
+        word2.Size = New Size(250, 23)
+        word2.TabIndex = 35
+        ' 
+        ' Label45
+        ' 
+        Label45.AutoSize = True
+        Label45.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label45.ForeColor = Color.Black
+        Label45.Location = New Point(122, 223)
+        Label45.Name = "Label45"
+        Label45.Size = New Size(119, 21)
+        Label45.TabIndex = 34
+        Label45.Text = "Right(txt, 2)  = "
+        ' 
+        ' word1
+        ' 
+        word1.Location = New Point(244, 166)
+        word1.Name = "word1"
+        word1.Size = New Size(250, 23)
+        word1.TabIndex = 33
+        ' 
+        ' Label46
+        ' 
+        Label46.AutoSize = True
+        Label46.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label46.ForeColor = Color.Black
+        Label46.Location = New Point(123, 164)
+        Label46.Name = "Label46"
+        Label46.Size = New Size(115, 21)
+        Label46.TabIndex = 32
+        Label46.Text = "Right(txt, 5) = "
+        ' 
+        ' Label47
+        ' 
+        Label47.AutoSize = True
+        Label47.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label47.ForeColor = Color.Black
+        Label47.Location = New Point(518, 0)
+        Label47.Name = "Label47"
+        Label47.Size = New Size(105, 21)
+        Label47.TabIndex = 31
+        Label47.Text = "Right Format"
+        ' 
         ' FormatNumberPanel
         ' 
         FormatNumberPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
@@ -739,9 +2044,9 @@ Partial Class WEEK11_12
         FormatNumberPanel.Controls.Add(num1)
         FormatNumberPanel.Controls.Add(Label31)
         FormatNumberPanel.Controls.Add(Label32)
-        FormatNumberPanel.Location = New Point(295, 64)
+        FormatNumberPanel.Location = New Point(295, 55)
         FormatNumberPanel.Name = "FormatNumberPanel"
-        FormatNumberPanel.Size = New Size(623, 418)
+        FormatNumberPanel.Size = New Size(623, 427)
         FormatNumberPanel.TabIndex = 17
         ' 
         ' Button2
@@ -894,9 +2199,9 @@ Partial Class WEEK11_12
         FormatPanel.Controls.Add(Label12)
         FormatPanel.Controls.Add(MonthCalendar1)
         FormatPanel.Controls.Add(formatbox)
-        FormatPanel.Location = New Point(295, 64)
+        FormatPanel.Location = New Point(295, 55)
         FormatPanel.Name = "FormatPanel"
-        FormatPanel.Size = New Size(623, 418)
+        FormatPanel.Size = New Size(623, 427)
         FormatPanel.TabIndex = 14
         ' 
         ' Label19
@@ -955,9 +2260,9 @@ Partial Class WEEK11_12
         FormatDateTimePanel.Controls.Add(genDate)
         FormatDateTimePanel.Controls.Add(Label22)
         FormatDateTimePanel.Controls.Add(Label21)
-        FormatDateTimePanel.Location = New Point(295, 64)
+        FormatDateTimePanel.Location = New Point(295, 55)
         FormatDateTimePanel.Name = "FormatDateTimePanel"
-        FormatDateTimePanel.Size = New Size(623, 418)
+        FormatDateTimePanel.Size = New Size(623, 427)
         FormatDateTimePanel.TabIndex = 16
         ' 
         ' STime
@@ -1071,9 +2376,9 @@ Partial Class WEEK11_12
         FormatCurPanel.Controls.Add(conv)
         FormatCurPanel.Controls.Add(priceResult)
         FormatCurPanel.Controls.Add(txtPrice)
-        FormatCurPanel.Location = New Point(295, 64)
+        FormatCurPanel.Location = New Point(295, 56)
         FormatCurPanel.Name = "FormatCurPanel"
-        FormatCurPanel.Size = New Size(623, 418)
+        FormatCurPanel.Size = New Size(623, 426)
         FormatCurPanel.TabIndex = 15
         ' 
         ' Label20
@@ -1152,404 +2457,6 @@ Partial Class WEEK11_12
         txtPrice.PlaceholderText = "Enter Price Here"
         txtPrice.Size = New Size(193, 25)
         txtPrice.TabIndex = 26
-        ' 
-        ' AscPanel
-        ' 
-        AscPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        AscPanel.Controls.Add(Label16)
-        AscPanel.Controls.Add(Label3)
-        AscPanel.Controls.Add(txtASCWresult)
-        AscPanel.Controls.Add(Label4)
-        AscPanel.Controls.Add(txtASCW)
-        AscPanel.Controls.Add(Button1)
-        AscPanel.Controls.Add(Label2)
-        AscPanel.Controls.Add(txtASCresult)
-        AscPanel.Controls.Add(Label1)
-        AscPanel.Controls.Add(txtASC)
-        AscPanel.Controls.Add(ascConvertBtn)
-        AscPanel.Location = New Point(295, 67)
-        AscPanel.Name = "AscPanel"
-        AscPanel.Size = New Size(623, 415)
-        AscPanel.TabIndex = 11
-        ' 
-        ' Label16
-        ' 
-        Label16.AutoSize = True
-        Label16.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label16.ForeColor = Color.Black
-        Label16.Location = New Point(537, -3)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(86, 21)
-        Label16.TabIndex = 30
-        Label16.Text = "Asc/AScW"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.ForeColor = Color.Black
-        Label3.Location = New Point(3, 222)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(309, 21)
-        Label3.TabIndex = 28
-        Label3.Text = "ASCW= Can convert variety of characters"
-        ' 
-        ' txtASCWresult
-        ' 
-        txtASCWresult.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtASCWresult.Location = New Point(331, 275)
-        txtASCWresult.Name = "txtASCWresult"
-        txtASCWresult.ReadOnly = True
-        txtASCWresult.Size = New Size(130, 25)
-        txtASCWresult.TabIndex = 27
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(294, 281)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(31, 15)
-        Label4.TabIndex = 26
-        Label4.Text = "==>"
-        ' 
-        ' txtASCW
-        ' 
-        txtASCW.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtASCW.Location = New Point(95, 276)
-        txtASCW.Name = "txtASCW"
-        txtASCW.PlaceholderText = "Enter Text Here"
-        txtASCW.Size = New Size(193, 25)
-        txtASCW.TabIndex = 25
-        ' 
-        ' Button1
-        ' 
-        Button1.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        Button1.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        Button1.FlatAppearance.MouseDownBackColor = Color.Purple
-        Button1.FlatAppearance.MouseOverBackColor = Color.Fuchsia
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Tahoma", 9.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.Black
-        Button1.Location = New Point(219, 327)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(154, 29)
-        Button1.TabIndex = 24
-        Button1.Text = "ASCW Convert"
-        Button1.UseVisualStyleBackColor = False
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.Black
-        Label2.Location = New Point(3, 14)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(307, 21)
-        Label2.TabIndex = 23
-        Label2.Text = "ASC = Mainly converts english chars only"
-        ' 
-        ' txtASCresult
-        ' 
-        txtASCresult.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtASCresult.Location = New Point(331, 67)
-        txtASCresult.Name = "txtASCresult"
-        txtASCresult.ReadOnly = True
-        txtASCresult.Size = New Size(130, 25)
-        txtASCresult.TabIndex = 22
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(294, 73)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(31, 15)
-        Label1.TabIndex = 21
-        Label1.Text = "==>"
-        ' 
-        ' txtASC
-        ' 
-        txtASC.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtASC.Location = New Point(95, 68)
-        txtASC.Name = "txtASC"
-        txtASC.PlaceholderText = "Enter Text Here"
-        txtASC.Size = New Size(193, 25)
-        txtASC.TabIndex = 20
-        ' 
-        ' ascConvertBtn
-        ' 
-        ascConvertBtn.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        ascConvertBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        ascConvertBtn.FlatAppearance.MouseDownBackColor = Color.Purple
-        ascConvertBtn.FlatAppearance.MouseOverBackColor = Color.Fuchsia
-        ascConvertBtn.FlatStyle = FlatStyle.Flat
-        ascConvertBtn.Font = New Font("Tahoma", 9.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        ascConvertBtn.ForeColor = Color.Black
-        ascConvertBtn.Location = New Point(219, 119)
-        ascConvertBtn.Name = "ascConvertBtn"
-        ascConvertBtn.Size = New Size(154, 29)
-        ascConvertBtn.TabIndex = 19
-        ascConvertBtn.Text = "ASC Convert"
-        ascConvertBtn.UseVisualStyleBackColor = False
-        ' 
-        ' filterPanel
-        ' 
-        filterPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        filterPanel.Controls.Add(Label18)
-        filterPanel.Controls.Add(Label11)
-        filterPanel.Controls.Add(Label10)
-        filterPanel.Controls.Add(filtbtn)
-        filterPanel.Controls.Add(txtFilterItems)
-        filterPanel.Controls.Add(addBtn)
-        filterPanel.Controls.Add(FilterItems)
-        filterPanel.Controls.Add(txtAddItems)
-        filterPanel.Controls.Add(AddItems)
-        filterPanel.Location = New Point(295, 67)
-        filterPanel.Name = "filterPanel"
-        filterPanel.Size = New Size(623, 415)
-        filterPanel.TabIndex = 13
-        ' 
-        ' Label18
-        ' 
-        Label18.AutoSize = True
-        Label18.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label18.ForeColor = Color.Black
-        Label18.Location = New Point(576, -3)
-        Label18.Name = "Label18"
-        Label18.Size = New Size(47, 21)
-        Label18.TabIndex = 30
-        Label18.Text = "Filter"
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label11.ForeColor = Color.Black
-        Label11.Location = New Point(399, 14)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(111, 21)
-        Label11.TabIndex = 23
-        Label11.Text = "Filtered Items"
-        ' 
-        ' Label10
-        ' 
-        Label10.AutoSize = True
-        Label10.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label10.ForeColor = Color.Black
-        Label10.Location = New Point(85, 14)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(86, 21)
-        Label10.TabIndex = 22
-        Label10.Text = "Add Items"
-        ' 
-        ' filtbtn
-        ' 
-        filtbtn.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        filtbtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        filtbtn.FlatAppearance.MouseDownBackColor = Color.Purple
-        filtbtn.FlatAppearance.MouseOverBackColor = Color.Fuchsia
-        filtbtn.FlatStyle = FlatStyle.Popup
-        filtbtn.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        filtbtn.ForeColor = Color.Black
-        filtbtn.Location = New Point(391, 344)
-        filtbtn.Name = "filtbtn"
-        filtbtn.Size = New Size(147, 25)
-        filtbtn.TabIndex = 21
-        filtbtn.Text = "Filter Items"
-        filtbtn.UseVisualStyleBackColor = False
-        ' 
-        ' txtFilterItems
-        ' 
-        txtFilterItems.Font = New Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtFilterItems.Location = New Point(372, 303)
-        txtFilterItems.Name = "txtFilterItems"
-        txtFilterItems.PlaceholderText = "Search an Item"
-        txtFilterItems.Size = New Size(186, 22)
-        txtFilterItems.TabIndex = 20
-        ' 
-        ' addBtn
-        ' 
-        addBtn.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        addBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        addBtn.FlatAppearance.MouseDownBackColor = Color.Purple
-        addBtn.FlatAppearance.MouseOverBackColor = Color.Fuchsia
-        addBtn.FlatStyle = FlatStyle.Popup
-        addBtn.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        addBtn.ForeColor = Color.Black
-        addBtn.Location = New Point(59, 344)
-        addBtn.Name = "addBtn"
-        addBtn.Size = New Size(147, 25)
-        addBtn.TabIndex = 19
-        addBtn.Text = "Add Items"
-        addBtn.UseVisualStyleBackColor = False
-        ' 
-        ' FilterItems
-        ' 
-        FilterItems.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        FilterItems.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        FilterItems.ForeColor = Color.Black
-        FilterItems.FormattingEnabled = True
-        FilterItems.Location = New Point(361, 51)
-        FilterItems.Name = "FilterItems"
-        FilterItems.Size = New Size(206, 235)
-        FilterItems.TabIndex = 4
-        ' 
-        ' txtAddItems
-        ' 
-        txtAddItems.Font = New Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtAddItems.Location = New Point(43, 303)
-        txtAddItems.Name = "txtAddItems"
-        txtAddItems.PlaceholderText = "Add Items"
-        txtAddItems.Size = New Size(186, 22)
-        txtAddItems.TabIndex = 2
-        ' 
-        ' AddItems
-        ' 
-        AddItems.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        AddItems.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        AddItems.ForeColor = Color.Black
-        AddItems.FormattingEnabled = True
-        AddItems.Location = New Point(32, 51)
-        AddItems.Name = "AddItems"
-        AddItems.Size = New Size(206, 235)
-        AddItems.TabIndex = 0
-        ' 
-        ' characterPanel
-        ' 
-        characterPanel.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        characterPanel.Controls.Add(Label17)
-        characterPanel.Controls.Add(Label5)
-        characterPanel.Controls.Add(txtCHRWresult)
-        characterPanel.Controls.Add(txtCHRW)
-        characterPanel.Controls.Add(Label6)
-        characterPanel.Controls.Add(CHRW)
-        characterPanel.Controls.Add(Label8)
-        characterPanel.Controls.Add(txtCHRresult)
-        characterPanel.Controls.Add(Label9)
-        characterPanel.Controls.Add(txtCHR)
-        characterPanel.Controls.Add(chrConvert)
-        characterPanel.Location = New Point(295, 67)
-        characterPanel.Name = "characterPanel"
-        characterPanel.Size = New Size(623, 415)
-        characterPanel.TabIndex = 12
-        ' 
-        ' Label17
-        ' 
-        Label17.AutoSize = True
-        Label17.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label17.ForeColor = Color.Black
-        Label17.Location = New Point(541, -3)
-        Label17.Name = "Label17"
-        Label17.Size = New Size(82, 21)
-        Label17.TabIndex = 30
-        Label17.Text = "Chr/ChrW"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.ForeColor = Color.Black
-        Label5.Location = New Point(3, 222)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(399, 21)
-        Label5.TabIndex = 28
-        Label5.Text = "CHRW= Can convert variety of characters to numbers"
-        ' 
-        ' txtCHRWresult
-        ' 
-        txtCHRWresult.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtCHRWresult.Location = New Point(331, 275)
-        txtCHRWresult.Name = "txtCHRWresult"
-        txtCHRWresult.ReadOnly = True
-        txtCHRWresult.Size = New Size(130, 25)
-        txtCHRWresult.TabIndex = 27
-        ' 
-        ' txtCHRW
-        ' 
-        txtCHRW.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtCHRW.Location = New Point(95, 276)
-        txtCHRW.Name = "txtCHRW"
-        txtCHRW.PlaceholderText = "Enter Text Here"
-        txtCHRW.Size = New Size(193, 25)
-        txtCHRW.TabIndex = 25
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(294, 281)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(31, 15)
-        Label6.TabIndex = 26
-        Label6.Text = "==>"
-        ' 
-        ' CHRW
-        ' 
-        CHRW.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        CHRW.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        CHRW.FlatAppearance.MouseDownBackColor = Color.Purple
-        CHRW.FlatAppearance.MouseOverBackColor = Color.Fuchsia
-        CHRW.FlatStyle = FlatStyle.Flat
-        CHRW.Font = New Font("Tahoma", 9.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        CHRW.ForeColor = Color.Black
-        CHRW.Location = New Point(219, 327)
-        CHRW.Name = "CHRW"
-        CHRW.Size = New Size(154, 29)
-        CHRW.TabIndex = 24
-        CHRW.Text = "CHRW Convert"
-        CHRW.UseVisualStyleBackColor = False
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label8.ForeColor = Color.Black
-        Label8.Location = New Point(3, 14)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(390, 21)
-        Label8.TabIndex = 23
-        Label8.Text = "Chr = Mainly converts english chars to numbers only"
-        ' 
-        ' txtCHRresult
-        ' 
-        txtCHRresult.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtCHRresult.Location = New Point(331, 67)
-        txtCHRresult.Name = "txtCHRresult"
-        txtCHRresult.ReadOnly = True
-        txtCHRresult.Size = New Size(130, 25)
-        txtCHRresult.TabIndex = 22
-        ' 
-        ' Label9
-        ' 
-        Label9.AutoSize = True
-        Label9.Location = New Point(294, 73)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(31, 15)
-        Label9.TabIndex = 21
-        Label9.Text = "==>"
-        ' 
-        ' txtCHR
-        ' 
-        txtCHR.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtCHR.Location = New Point(95, 68)
-        txtCHR.Name = "txtCHR"
-        txtCHR.PlaceholderText = "Enter Text Here"
-        txtCHR.Size = New Size(193, 25)
-        txtCHR.TabIndex = 20
-        ' 
-        ' chrConvert
-        ' 
-        chrConvert.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        chrConvert.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(128), CByte(255))
-        chrConvert.FlatAppearance.MouseDownBackColor = Color.Purple
-        chrConvert.FlatAppearance.MouseOverBackColor = Color.Fuchsia
-        chrConvert.FlatStyle = FlatStyle.Flat
-        chrConvert.Font = New Font("Tahoma", 9.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        chrConvert.ForeColor = Color.Black
-        chrConvert.Location = New Point(219, 119)
-        chrConvert.Name = "chrConvert"
-        chrConvert.Size = New Size(154, 29)
-        chrConvert.TabIndex = 19
-        chrConvert.Text = "CHR Convert"
-        chrConvert.UseVisualStyleBackColor = False
         ' 
         ' Panel5
         ' 
@@ -1934,14 +2841,36 @@ Partial Class WEEK11_12
         Text = "WEEK11_12 - MDI Simulate"
         AllPanel.ResumeLayout(False)
         AllPanel.PerformLayout()
+        StrDupePanel.ResumeLayout(False)
+        StrDupePanel.PerformLayout()
+        TrimPanel.ResumeLayout(False)
+        TrimPanel.PerformLayout()
+        StrReversePanel.ResumeLayout(False)
+        StrReversePanel.PerformLayout()
+        SpacePanel.ResumeLayout(False)
+        SpacePanel.PerformLayout()
+        AscPanel.ResumeLayout(False)
+        AscPanel.PerformLayout()
+        filterPanel.ResumeLayout(False)
+        filterPanel.PerformLayout()
+        SplitPanel.ResumeLayout(False)
+        SplitPanel.PerformLayout()
+        StrCompPanel.ResumeLayout(False)
+        StrCompPanel.PerformLayout()
+        FormatPercentPanel.ResumeLayout(False)
+        FormatPercentPanel.PerformLayout()
+        StrConvPanel.ResumeLayout(False)
+        StrConvPanel.PerformLayout()
         RTrimPanel.ResumeLayout(False)
         RTrimPanel.PerformLayout()
+        UcasePanel.ResumeLayout(False)
+        UcasePanel.PerformLayout()
+        characterPanel.ResumeLayout(False)
+        characterPanel.PerformLayout()
         RsetPanel.ResumeLayout(False)
         RsetPanel.PerformLayout()
         RightPanel.ResumeLayout(False)
         RightPanel.PerformLayout()
-        FormatPercentPanel.ResumeLayout(False)
-        FormatPercentPanel.PerformLayout()
         FormatNumberPanel.ResumeLayout(False)
         FormatNumberPanel.PerformLayout()
         FormatPanel.ResumeLayout(False)
@@ -1950,12 +2879,6 @@ Partial Class WEEK11_12
         FormatDateTimePanel.PerformLayout()
         FormatCurPanel.ResumeLayout(False)
         FormatCurPanel.PerformLayout()
-        AscPanel.ResumeLayout(False)
-        AscPanel.PerformLayout()
-        filterPanel.ResumeLayout(False)
-        filterPanel.PerformLayout()
-        characterPanel.ResumeLayout(False)
-        characterPanel.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         GroupBox1.ResumeLayout(False)
         ResumeLayout(False)
@@ -2098,13 +3021,84 @@ Partial Class WEEK11_12
     Friend WithEvents Label43 As Label
     Friend WithEvents Label48 As Label
     Friend WithEvents RTrimPanel As Panel
-    Friend WithEvents Button5 As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label49 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label50 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label51 As Label
     Friend WithEvents Label52 As Label
+    Friend WithEvents UcasePanel As Panel
+    Friend WithEvents Button6 As Button
+    Friend WithEvents txtUcase As TextBox
+    Friend WithEvents Label56 As Label
+    Friend WithEvents Label53 As Label
+    Friend WithEvents txtUcaseResult As TextBox
+    Friend WithEvents Label55 As Label
+    Friend WithEvents Label54 As Label
+    Friend WithEvents Label49 As Label
+    Friend WithEvents Label50 As Label
+    Friend WithEvents txtRtrimResult As TextBox
+    Friend WithEvents Label51 As Label
+    Friend WithEvents txtRtrim As TextBox
+    Friend WithEvents Button5 As Button
+    Friend WithEvents SpacePanel As Panel
+    Friend WithEvents Label57 As Label
+    Friend WithEvents Label58 As Label
+    Friend WithEvents Label59 As Label
+    Friend WithEvents txtSpaceWordResult As TextBox
+    Friend WithEvents Label60 As Label
+    Friend WithEvents txtSpaceWord As TextBox
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Label61 As Label
+    Friend WithEvents txtNumberSpace As TextBox
+    Friend WithEvents clearBtnForSpace As Button
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents SplitPanel As Panel
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Label62 As Label
+    Friend WithEvents strComp2 As TextBox
+    Friend WithEvents Label63 As Label
+    Friend WithEvents Label64 As Label
+    Friend WithEvents Label65 As Label
+    Friend WithEvents strCompResult As TextBox
+    Friend WithEvents Label66 As Label
+    Friend WithEvents txtSplit As TextBox
+    Friend WithEvents splitBtnBtn As Button
+    Friend WithEvents SplitTable As ListBox
+    Friend WithEvents StrCompPanel As Panel
+    Friend WithEvents Label67 As Label
+    Friend WithEvents Label68 As Label
+    Friend WithEvents Label69 As Label
+    Friend WithEvents strComp1 As TextBox
+    Friend WithEvents Button9 As Button
+    Friend WithEvents StrConvPanel As Panel
+    Friend WithEvents Label72 As Label
+    Friend WithEvents conv3 As TextBox
+    Friend WithEvents Label70 As Label
+    Friend WithEvents conv1 As TextBox
+    Friend WithEvents Label73 As Label
+    Friend WithEvents txtconv As TextBox
+    Friend WithEvents StrDupePanel As Panel
+    Friend WithEvents Label71 As Label
+    Friend WithEvents Label74 As Label
+    Friend WithEvents numDupe As TextBox
+    Friend WithEvents Label75 As Label
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Label76 As Label
+    Friend WithEvents txtDupe As TextBox
+    Friend WithEvents txtDupeResult As TextBox
+    Friend WithEvents Label77 As Label
+    Friend WithEvents Button11 As Button
+    Friend WithEvents StrReversePanel As Panel
+    Friend WithEvents Label79 As Label
+    Friend WithEvents Label80 As Label
+    Friend WithEvents Button13 As Button
+    Friend WithEvents Label81 As Label
+    Friend WithEvents txtReversed As TextBox
+    Friend WithEvents txtReversedResult As TextBox
+    Friend WithEvents Label82 As Label
+    Friend WithEvents Label78 As Label
+    Friend WithEvents TrimPanel As Panel
+    Friend WithEvents Label83 As Label
+    Friend WithEvents Label84 As Label
+    Friend WithEvents Button12 As Button
+    Friend WithEvents Label85 As Label
+    Friend WithEvents txtTrim As TextBox
+    Friend WithEvents txtTrimResult As TextBox
+    Friend WithEvents Label86 As Label
 End Class
