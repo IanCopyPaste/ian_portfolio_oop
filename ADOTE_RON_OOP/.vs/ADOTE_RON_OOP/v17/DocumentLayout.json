@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|c:\\users\\client\\documents\\vbworks\\adote_ron_oop\\adote_ron_oop\\adote_ron_oop\\crud_alternative.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|solutionrelative:adote_ron_oop\\crud_alternative.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|c:\\users\\client\\documents\\vbworks\\adote_ron_oop\\adote_ron_oop\\adote_ron_oop\\crud_alternative.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|solutionrelative:adote_ron_oop\\crud_alternative.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|c:\\users\\client\\documents\\vbworks\\adote_ron_oop\\adote_ron_oop\\adote_ron_oop\\crud = simple management system.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|solutionrelative:adote_ron_oop\\crud = simple management system.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CDBA729-E174-4DCA-B6ED-475B4FC19871}|ADOTE_RON_OOP\\ADOTE_RON_OOP.vbproj|c:\\users\\client\\documents\\vbworks\\adote_ron_oop\\adote_ron_oop\\adote_ron_oop\\maindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 326,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,32 +30,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "crud_alternative.vb",
-              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\crud_alternative.vb",
-              "RelativeDocumentMoniker": "ADOTE_RON_OOP\\crud_alternative.vb",
-              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\crud_alternative.vb",
-              "RelativeToolTip": "ADOTE_RON_OOP\\crud_alternative.vb",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAIwIYAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-01T05:31:28.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "crud_alternative.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\crud_alternative.vb",
-              "RelativeDocumentMoniker": "ADOTE_RON_OOP\\crud_alternative.vb",
-              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\crud_alternative.vb [Design]",
-              "RelativeToolTip": "ADOTE_RON_OOP\\crud_alternative.vb [Design]",
+              "Title": "CRUD = Simple Management System.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\CRUD = Simple Management System.vb",
+              "RelativeDocumentMoniker": "ADOTE_RON_OOP\\CRUD = Simple Management System.vb",
+              "ToolTip": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\CRUD = Simple Management System.vb [Design]",
+              "RelativeToolTip": "ADOTE_RON_OOP\\CRUD = Simple Management System.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-01T05:23:40.303Z",
+              "WhenOpened": "2025-11-01T06:57:43.587Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainDashboard.vb [Design]",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\MainDashboard.vb",
               "RelativeDocumentMoniker": "ADOTE_RON_OOP\\MainDashboard.vb",
@@ -71,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MainDashboard.vb",
               "DocumentMoniker": "C:\\Users\\CLIENT\\Documents\\vbWorks\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\ADOTE_RON_OOP\\MainDashboard.vb",
               "RelativeDocumentMoniker": "ADOTE_RON_OOP\\MainDashboard.vb",
@@ -79,8 +62,7 @@
               "RelativeToolTip": "ADOTE_RON_OOP\\MainDashboard.vb",
               "ViewState": "AgIAAEwAAAAAAAAAAAApwFwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-26T11:43:14.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T11:43:14.851Z"
             }
           ]
         },

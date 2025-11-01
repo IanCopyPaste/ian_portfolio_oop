@@ -1,104 +1,246 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.IO
+Imports MySql.Data.MySqlClient
 Public Class CRUD___Simple_Management_System
     Public con As New MySqlConnection("server = localhost; user = root; password = ; database = oop_crud")
+
+    'main process
     Private Sub CRUD___Simple_Management_System_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         displayTable()
     End Sub
 
     Dim path As String = ""
     Private Sub BtnCreate_Click(sender As Object, e As EventArgs) Handles BtnCreate.Click
-        If IsNumeric(txtPhoneNumber.Text) AndAlso Not String.IsNullOrWhiteSpace(txtPhoneNumber.Text) Then
-            Try
+        Try
+            con.Open()
+            Dim query1 As String = "INSERT INTO names(fname,mname,lname,suffix) VALUES (@fname,@mname,@lname,@suffix)"
+            Dim cmd As New MySqlCommand(query1, con)
+            cmd.Parameters.AddWithValue("@fname", txtFname.Text)
+            cmd.Parameters.AddWithValue("@mname", txtMname.Text)
+            cmd.Parameters.AddWithValue("@lname", txtLname.Text)
+            cmd.Parameters.AddWithValue("@suffix", txtSuffix.Text)
+            cmd.ExecuteNonQuery()
+            Dim id As Long = cmd.LastInsertedId
+
+            Dim query2 As String = "INSERT INTO students(nameID, phone, birth) VALUES (@id,@phone,@birth)"
+            Dim cmd2 As New MySqlCommand(query2, con)
+            cmd2.Parameters.AddWithValue("@id", id)
+            cmd2.Parameters.AddWithValue("@phone", txtPhoneNumber.Text)
+            cmd2.Parameters.AddWithValue("@birth", txtDob.Value.ToString("yyyy-MM-dd"))
+            cmd2.ExecuteNonQuery()
+
+            Dim query3 As String = "SELECT studID FROM students WHERE nameID = @nameID"
+            Dim cmd3 As New MySqlCommand(query3, con)
+            cmd3.Parameters.AddWithValue("@nameID", id)
+            Dim studID As Long = Convert.ToInt64(cmd3.ExecuteScalar())
+
+            If path <> "" Then
+                Dim queryPic As String = "UPDATE students SET pic = @pic WHERE studID = @studID"
+                Dim cmd4 As New MySqlCommand(queryPic, con)
+                cmd4.Parameters.AddWithValue("@pic", File.ReadAllBytes(path))
+                cmd4.Parameters.AddWithValue("@studID", studID)
+                cmd4.ExecuteNonQuery()
+            End If
+
+            MsgBox("Student Added!", vbInformation, "Success!")
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical, "ERROR")
+        Finally
+            GC.Collect()
+            con.Close()
+            displayTable()
+            cleartextBox()
+        End Try
+    End Sub
+
+    Private Sub BtnUpdate_Click(sender As Object, e As EventArgs) Handles BtnUpdate.Click
+        Try
+            con.Open()
+            Dim studID As Long = Convert.ToInt64(txtID.Text)
+
+            ' Get the nameID for this student
+            Dim queryGetNameID As String = "SELECT nameID FROM students WHERE studID = @studID"
+            Dim cmdGetNameID As New MySqlCommand(queryGetNameID, con)
+            cmdGetNameID.Parameters.AddWithValue("@studID", studID)
+            Dim nameID As Long = Convert.ToInt64(cmdGetNameID.ExecuteScalar())
+
+            ' Update names table
+            Dim query1 As String = "UPDATE names SET fname=@fname, mname=@mname, lname=@lname, suffix=@suffix WHERE nameID=@nameID"
+            Dim cmd As New MySqlCommand(query1, con)
+            cmd.Parameters.AddWithValue("@fname", txtFname.Text)
+            cmd.Parameters.AddWithValue("@mname", txtMname.Text)
+            cmd.Parameters.AddWithValue("@lname", txtLname.Text)
+            cmd.Parameters.AddWithValue("@suffix", txtSuffix.Text)
+            cmd.Parameters.AddWithValue("@nameID", nameID)
+            cmd.ExecuteNonQuery()
+
+            ' Update students table
+            Dim query2 As String = "UPDATE students SET phone=@phone, birth=@birth WHERE studID=@studID"
+            Dim cmd2 As New MySqlCommand(query2, con)
+            cmd2.Parameters.AddWithValue("@phone", txtPhoneNumber.Text)
+            cmd2.Parameters.AddWithValue("@birth", txtDob.Value.ToString("yyyy-MM-dd"))
+            cmd2.Parameters.AddWithValue("@studID", studID)
+            cmd2.ExecuteNonQuery()
+
+            ' Update photo if a new one was selected
+            If path <> "" Then
+                Dim queryPic As String = "UPDATE students SET pic = @pic WHERE studID = @studID"
+                Dim cmd3 As New MySqlCommand(queryPic, con)
+                cmd3.Parameters.AddWithValue("@pic", File.ReadAllBytes(path))
+                cmd3.Parameters.AddWithValue("@studID", studID)
+                cmd3.ExecuteNonQuery()
+            End If
+
+            MsgBox("Student Updated!", vbInformation, "Success!")
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical, "ERROR")
+        Finally
+            GC.Collect()
+            con.Close()
+            displayTable()
+            cleartextBox()
+        End Try
+    End Sub
+
+    Private Sub BtnDelete_Click(sender As Object, e As EventArgs) Handles BtnDelete.Click
+        Try
+            ' Confirm deletion
+            Dim result As DialogResult = MessageBox.Show("Are you sure you want to delete this student?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+
+            If result = DialogResult.Yes Then
                 con.Open()
+                Dim studID As Long = Convert.ToInt64(txtID.Text)
 
-                ' Insert into stud_names and get the auto-generated ID
-                Dim query As String = "INSERT INTO stud_names(lname,fname,mname,suffix) VALUES (@l,@f,@m,@s); SELECT LAST_INSERT_ID();"
-                Dim cmd As New MySqlCommand(query, con)
-                cmd.Parameters.AddWithValue("@l", UCase(txtLname.Text.Trim()))
-                cmd.Parameters.AddWithValue("@f", UCase(txtFname.Text.Trim()))
-                cmd.Parameters.AddWithValue("@m", UCase(txtMname.Text.Trim()))
-                cmd.Parameters.AddWithValue("@s", UCase(txtSuffix.Text.Trim()))
+                ' Get the nameID for this student
+                Dim queryGetNameID As String = "SELECT nameID FROM students WHERE studID = @studID"
+                Dim cmdGetNameID As New MySqlCommand(queryGetNameID, con)
+                cmdGetNameID.Parameters.AddWithValue("@studID", studID)
+                Dim nameID As Long = Convert.ToInt64(cmdGetNameID.ExecuteScalar())
 
-                Dim id As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                ' Delete from students table first (child table)
+                Dim query1 As String = "DELETE FROM students WHERE studID = @studID"
+                Dim cmd1 As New MySqlCommand(query1, con)
+                cmd1.Parameters.AddWithValue("@studID", studID)
+                cmd1.ExecuteNonQuery()
 
-                Dim query2 As String = "INSERT INTO students(nameID, phone_no, dateOfBirth, pic) VALUES (@id,@pn,@dob,@pic)"
+                ' Delete from names table (parent table)
+                Dim query2 As String = "DELETE FROM names WHERE nameID = @nameID"
                 Dim cmd2 As New MySqlCommand(query2, con)
-                cmd2.Parameters.AddWithValue("@id", id)
-                cmd2.Parameters.AddWithValue("@pn", txtPhoneNumber.Text.Trim())
-                cmd2.Parameters.AddWithValue("@dob", txtDob.Value.ToString("yyyy-MM-dd"))
-
-                If Not String.IsNullOrEmpty(path) AndAlso IO.File.Exists(path) Then
-                    Dim imgBytes() As Byte = IO.File.ReadAllBytes(path)
-                    cmd2.Parameters.AddWithValue("@pic", imgBytes)
-                Else
-                    cmd2.Parameters.AddWithValue("@pic", DBNull.Value)
-                End If
-
+                cmd2.Parameters.AddWithValue("@nameID", nameID)
                 cmd2.ExecuteNonQuery()
-                MsgBox("Student inserted successfully!", vbInformation, "Success")
 
-            Catch ex As MySqlException
-                MsgBox("Database Error: " & ex.Message, vbCritical, "MySQL Error")
-            Catch ex As Exception
-                MsgBox("Error: " & ex.Message, vbCritical, "Connection Error")
-            Finally
-                If con.State = ConnectionState.Open Then
-                    con.Close()
-                End If
-                displayTable()
-                cleartxtBoxes()
-            End Try
-        Else
-            MsgBox("Please enter a valid phone number!", vbExclamation, "Invalid Input")
-        End If
+                MsgBox("Student Deleted!", vbInformation, "Success!")
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical, "ERROR")
+        Finally
+            GC.Collect()
+            con.Close()
+            displayTable()
+            cleartextBox()
+        End Try
     End Sub
 
     Private Sub BtnUploadPhoto_Click(sender As Object, e As EventArgs) Handles BtnUploadPhoto.Click
         If OpenFileDialog1.ShowDialog = DialogResult.OK Then
             path = OpenFileDialog1.FileName
             picBox.Image = Image.FromFile(path)
-            MsgBox(pushPhotoToDatabase(path))
             BtnUploadPhoto.Visible = False
         End If
     End Sub
-    Public Function pushPhotoToDatabase(path As String)
-        For Each p As String In path
-            If p = "\" Then
-                p = "\\"
-            End If
-            path += p
-        Next
-        Return path
-    End Function
 
     Private Sub studentTable_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles studentTable.CellClick
-        Dim id As Integer = studentTable.Rows(e.RowIndex).Cells(0).Value
+        If e.RowIndex < 0 Then
+        Else
+            Dim id As Long
+            Try
+                con.Open()
+                id = studentTable.Rows(e.RowIndex).Cells(0).Value
+                Dim query As String = "SELECT n.*,s.*, 
+                                       TIMESTAMPDIFF(YEAR, s.birth, CURDATE()) AS Age
+                                       FROM students s JOIN names n ON n.nameID = s.nameID WHERE studID = @id"
+                Dim cmd As New MySqlCommand(query, con)
+                cmd.Parameters.AddWithValue("@id", id)
+                Dim read As MySqlDataReader = cmd.ExecuteReader
+                While read.Read
+                    txtLname.Text = read.GetString("lname")
+                    txtMname.Text = read.GetString("mname")
+                    txtFname.Text = read.GetString("fname")
+                    txtSuffix.Text = read.GetString("suffix")
+                    txtID.Text = read.GetInt32("studID")
+                    txtPhoneNumber.Text = read.GetString("phone")
+                    txtDobb.Text = read.GetDateTime("birth")
+                    txtAge.Text = read.GetInt64("Age")
+                End While
 
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            Finally
+                GC.Collect()
+                con.Close()
+                getPhoto(id)
+            End Try
+        End If
     End Sub
+
+    Private Sub txtDob_ValueChanged(sender As Object, e As EventArgs) Handles txtDob.ValueChanged
+        Dim datess As String = txtDob.Value.ToString("yyyy-MM-dd")
+        txtDobb.Text = datess
+    End Sub
+    'main processw
 
     'methods
     Public Sub displayTable()
         Try
             con.Open()
-            Dim query As String = "SELECT * FROM stud_view"
-            Dim dapt As New MySqlDataAdapter(query, con)
+            Dim query As String = "SELECT * FROM studView"
+            Dim dasd As New MySqlDataAdapter(query, con)
             Dim dt As New DataTable
-            dapt.Fill(dt)
+            dasd.Fill(dt)
             studentTable.DataSource = dt
-            MsgBox("database connected")
         Catch ex As Exception
-            MsgBox(ex.Message, vbCritical, "Connection Error!")
+            MsgBox(ex.Message, vbCritical, "CONNECTION ERROR!")
         Finally
-            GC.Collect()
             con.Close()
         End Try
     End Sub
-    Public Sub cleartxtBoxes()
+
+    Public Sub cleartextBox()
         For Each e As Object In CalPanel.Controls
             If TypeOf e Is TextBox Then
                 CType(e, TextBox).Clear()
             End If
         Next
+        picBox.Image = Nothing
+        BtnUploadPhoto.Visible = True
+        path = ""
     End Sub
-    'methods end
+
+    Public Sub getPhoto(id As Long)
+        Try
+            con.Open()
+            Dim query As String = "SELECT pic FROM students WHERE studID = @userID"
+            Dim cmd As New MySqlCommand(query, con)
+            cmd.Parameters.AddWithValue("@userID", id)
+            Dim result As Object = cmd.ExecuteScalar
+            If IsDBNull(result) Then
+                BtnUploadPhoto.Visible = True
+                picBox.Image = Nothing
+            Else
+                BtnUploadPhoto.Visible = False
+                Dim imageBytes() As Byte = DirectCast(result, Byte())
+                Dim ms As New MemoryStream(imageBytes)
+                picBox.Image = Image.FromStream(ms)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            GC.Collect()
+            con.Close()
+        End Try
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        cleartextBox()
+    End Sub
+    'methods
 End Class

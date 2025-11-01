@@ -25,6 +25,7 @@ Partial Class CRUD___Simple_Management_System
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CRUD___Simple_Management_System))
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         CalPanel = New Panel()
+        txtDobb = New TextBox()
         txtDob = New DateTimePicker()
         BtnUploadPhoto = New Button()
         BtnDelete = New Button()
@@ -48,12 +49,13 @@ Partial Class CRUD___Simple_Management_System
         txtID = New TextBox()
         picBox = New PictureBox()
         studentTable = New DataGridView()
-        OpenFileDialog1 = New OpenFileDialog()
         Student_ID = New DataGridViewTextBoxColumn()
         Fullname = New DataGridViewTextBoxColumn()
         Phone = New DataGridViewTextBoxColumn()
         DateOfBirth = New DataGridViewTextBoxColumn()
         age = New DataGridViewTextBoxColumn()
+        OpenFileDialog1 = New OpenFileDialog()
+        btnClear = New Button()
         CalPanel.SuspendLayout()
         CType(picBox, ComponentModel.ISupportInitialize).BeginInit()
         CType(studentTable, ComponentModel.ISupportInitialize).BeginInit()
@@ -64,6 +66,8 @@ Partial Class CRUD___Simple_Management_System
         CalPanel.BackColor = Color.Transparent
         CalPanel.BackgroundImage = CType(resources.GetObject("CalPanel.BackgroundImage"), Image)
         CalPanel.BackgroundImageLayout = ImageLayout.Stretch
+        CalPanel.Controls.Add(btnClear)
+        CalPanel.Controls.Add(txtDobb)
         CalPanel.Controls.Add(txtDob)
         CalPanel.Controls.Add(BtnUploadPhoto)
         CalPanel.Controls.Add(BtnDelete)
@@ -93,10 +97,18 @@ Partial Class CRUD___Simple_Management_System
         CalPanel.Size = New Size(1089, 619)
         CalPanel.TabIndex = 4
         ' 
+        ' txtDobb
+        ' 
+        txtDobb.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtDobb.Location = New Point(23, 456)
+        txtDobb.Name = "txtDobb"
+        txtDobb.Size = New Size(176, 25)
+        txtDobb.TabIndex = 27
+        ' 
         ' txtDob
         ' 
         txtDob.CalendarFont = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtDob.Location = New Point(23, 455)
+        txtDob.Location = New Point(23, 487)
         txtDob.Name = "txtDob"
         txtDob.Size = New Size(176, 23)
         txtDob.TabIndex = 26
@@ -120,7 +132,7 @@ Partial Class CRUD___Simple_Management_System
         BtnDelete.FlatStyle = FlatStyle.Popup
         BtnDelete.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnDelete.ForeColor = SystemColors.ControlText
-        BtnDelete.Location = New Point(291, 540)
+        BtnDelete.Location = New Point(292, 553)
         BtnDelete.Name = "BtnDelete"
         BtnDelete.Size = New Size(83, 34)
         BtnDelete.TabIndex = 24
@@ -133,7 +145,7 @@ Partial Class CRUD___Simple_Management_System
         BtnUpdate.FlatStyle = FlatStyle.Popup
         BtnUpdate.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnUpdate.ForeColor = SystemColors.ControlText
-        BtnUpdate.Location = New Point(171, 540)
+        BtnUpdate.Location = New Point(172, 553)
         BtnUpdate.Name = "BtnUpdate"
         BtnUpdate.Size = New Size(83, 34)
         BtnUpdate.TabIndex = 23
@@ -156,7 +168,7 @@ Partial Class CRUD___Simple_Management_System
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.White
-        Label7.Location = New Point(61, 484)
+        Label7.Location = New Point(61, 513)
         Label7.Name = "Label7"
         Label7.Size = New Size(102, 20)
         Label7.TabIndex = 21
@@ -234,7 +246,6 @@ Partial Class CRUD___Simple_Management_System
         txtSearch.Location = New Point(446, 29)
         txtSearch.Name = "txtSearch"
         txtSearch.PlaceholderText = "Search Table"
-        txtSearch.ReadOnly = True
         txtSearch.Size = New Size(324, 25)
         txtSearch.TabIndex = 14
         ' 
@@ -244,7 +255,7 @@ Partial Class CRUD___Simple_Management_System
         BtnCreate.FlatStyle = FlatStyle.Popup
         BtnCreate.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnCreate.ForeColor = SystemColors.ControlText
-        BtnCreate.Location = New Point(50, 540)
+        BtnCreate.Location = New Point(51, 553)
         BtnCreate.Name = "BtnCreate"
         BtnCreate.Size = New Size(83, 34)
         BtnCreate.TabIndex = 11
@@ -339,17 +350,13 @@ Partial Class CRUD___Simple_Management_System
         studentTable.Location = New Point(446, 60)
         studentTable.Name = "studentTable"
         studentTable.ReadOnly = True
-        studentTable.Size = New Size(614, 514)
+        studentTable.Size = New Size(631, 514)
         studentTable.TabIndex = 0
-        ' 
-        ' OpenFileDialog1
-        ' 
-        OpenFileDialog1.FileName = "OpenFileDialog1"
         ' 
         ' Student_ID
         ' 
         Student_ID.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-        Student_ID.DataPropertyName = "Student_ID"
+        Student_ID.DataPropertyName = "ID"
         Student_ID.HeaderText = "ID"
         Student_ID.Name = "Student_ID"
         Student_ID.ReadOnly = True
@@ -357,7 +364,7 @@ Partial Class CRUD___Simple_Management_System
         ' Fullname
         ' 
         Fullname.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
-        Fullname.DataPropertyName = "Fullname"
+        Fullname.DataPropertyName = "FULLNAME"
         Fullname.HeaderText = "Fullname"
         Fullname.Name = "Fullname"
         Fullname.ReadOnly = True
@@ -383,6 +390,23 @@ Partial Class CRUD___Simple_Management_System
         age.HeaderText = "Age"
         age.Name = "age"
         age.ReadOnly = True
+        ' 
+        ' OpenFileDialog1
+        ' 
+        OpenFileDialog1.FileName = "OpenFileDialog1"
+        ' 
+        ' btnClear
+        ' 
+        btnClear.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
+        btnClear.FlatStyle = FlatStyle.Popup
+        btnClear.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnClear.ForeColor = SystemColors.ControlText
+        btnClear.Location = New Point(23, 284)
+        btnClear.Name = "btnClear"
+        btnClear.Size = New Size(83, 27)
+        btnClear.TabIndex = 28
+        btnClear.Text = "Clear"
+        btnClear.UseVisualStyleBackColor = False
         ' 
         ' CRUD___Simple_Management_System
         ' 
@@ -433,4 +457,6 @@ Partial Class CRUD___Simple_Management_System
     Friend WithEvents Phone As DataGridViewTextBoxColumn
     Friend WithEvents DateOfBirth As DataGridViewTextBoxColumn
     Friend WithEvents age As DataGridViewTextBoxColumn
+    Friend WithEvents txtDobb As TextBox
+    Friend WithEvents btnClear As Button
 End Class
