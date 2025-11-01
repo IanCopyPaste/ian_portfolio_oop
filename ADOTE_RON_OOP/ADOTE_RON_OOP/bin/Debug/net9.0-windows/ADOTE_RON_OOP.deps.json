@@ -7,8 +7,19 @@
   "targets": {
     ".NETCoreApp,Version=v9.0": {
       "ADOTE_RON_OOP/1.0.0": {
+        "dependencies": {
+          "MySql.Data": "9.4.0.0"
+        },
         "runtime": {
           "ADOTE_RON_OOP.dll": {}
+        }
+      },
+      "MySql.Data/9.4.0.0": {
+        "runtime": {
+          "MySql.Data.dll": {
+            "assemblyVersion": "9.4.0.0",
+            "fileVersion": "9.4.0.0"
+          }
         }
       }
     }
@@ -16,6 +27,11 @@
   "libraries": {
     "ADOTE_RON_OOP/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MySql.Data/9.4.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

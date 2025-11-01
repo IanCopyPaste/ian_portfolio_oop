@@ -81,4 +81,15 @@ Public Class MainDashboard
             End If
         Next
     End Sub
+
+    Private Sub CRUDTestingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CRUDTestingToolStripMenuItem.Click
+        CRUD___Simple_Management_System.Show()
+        GC.Collect()
+        Me.Dispose()
+    End Sub
+
+    Private Sub CrudalternativeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CrudalternativeToolStripMenuItem.Click
+        crud_alternative.Show()
+        Me.Dispose()
+    End Sub
 End Class

@@ -99,11 +99,12 @@ Public Class WEEK5
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         MainDashboard.Show()
+        GC.Collect()
         Me.Dispose()
     End Sub
 
     'NUMBERS STARTS HERE
-    Private Sub Buttons_Click(sender As Object, e As EventArgs) Handles btn1.Click, btn2.Click, btn3.Click, btn4.Click, btn4.Click, btn5.Click, btn6.Click, btn7.Click, btn8.Click, btn9.Click, btn0.Click, btn00.Click, btnDot.Click
+    Private Sub Buttons_Click(sender As Object, e As EventArgs) Handles btn1.Click, btn2.Click, btn3.Click, btn4.Click, btn5.Click, btn6.Click, btn7.Click, btn8.Click, btn9.Click, btn0.Click, btn00.Click, btnDot.Click
         Dim btn As Button = DirectCast(sender, Button)
         If numBox.Text = "0" Then
             numBox.Clear()

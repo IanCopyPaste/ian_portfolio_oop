@@ -37,11 +37,12 @@ Partial Class MainDashboard
         WEEK1011ToolStripMenuItem = New ToolStripMenuItem()
         DEVSPREFRENCEToolStripMenuItem = New ToolStripMenuItem()
         GamesToolStripMenuItem = New ToolStripMenuItem()
+        CRUDTestingToolStripMenuItem = New ToolStripMenuItem()
+        CrudalternativeToolStripMenuItem = New ToolStripMenuItem()
         EXITToolStripMenuItem = New ToolStripMenuItem()
         Label1 = New Label()
         Label2 = New Label()
         PictureBox1 = New PictureBox()
-        CRUDTestingToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -131,7 +132,7 @@ Partial Class MainDashboard
         ' 
         ' DEVSPREFRENCEToolStripMenuItem
         ' 
-        DEVSPREFRENCEToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {GamesToolStripMenuItem, CRUDTestingToolStripMenuItem})
+        DEVSPREFRENCEToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {GamesToolStripMenuItem, CRUDTestingToolStripMenuItem, CrudalternativeToolStripMenuItem})
         DEVSPREFRENCEToolStripMenuItem.Font = New Font("Arial", 9.75F, FontStyle.Bold)
         DEVSPREFRENCEToolStripMenuItem.ForeColor = SystemColors.ButtonHighlight
         DEVSPREFRENCEToolStripMenuItem.Name = "DEVSPREFRENCEToolStripMenuItem"
@@ -143,6 +144,18 @@ Partial Class MainDashboard
         GamesToolStripMenuItem.Name = "GamesToolStripMenuItem"
         GamesToolStripMenuItem.Size = New Size(198, 22)
         GamesToolStripMenuItem.Text = "Monster Vs Humans"
+        ' 
+        ' CRUDTestingToolStripMenuItem
+        ' 
+        CRUDTestingToolStripMenuItem.Name = "CRUDTestingToolStripMenuItem"
+        CRUDTestingToolStripMenuItem.Size = New Size(198, 22)
+        CRUDTestingToolStripMenuItem.Text = "CRUD Testing"
+        ' 
+        ' CrudalternativeToolStripMenuItem
+        ' 
+        CrudalternativeToolStripMenuItem.Name = "CrudalternativeToolStripMenuItem"
+        CrudalternativeToolStripMenuItem.Size = New Size(198, 22)
+        CrudalternativeToolStripMenuItem.Text = "Crud_alternative"
         ' 
         ' EXITToolStripMenuItem
         ' 
@@ -192,12 +205,6 @@ Partial Class MainDashboard
         PictureBox1.TabIndex = 3
         PictureBox1.TabStop = False
         ' 
-        ' CRUDTestingToolStripMenuItem
-        ' 
-        CRUDTestingToolStripMenuItem.Name = "CRUDTestingToolStripMenuItem"
-        CRUDTestingToolStripMenuItem.Size = New Size(198, 22)
-        CRUDTestingToolStripMenuItem.Text = "CRUD Testing"
-        ' 
         ' MainDashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 16F)
@@ -244,4 +251,5 @@ Partial Class MainDashboard
     Friend WithEvents WEEK1011ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents CRUDTestingToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CrudalternativeToolStripMenuItem As ToolStripMenuItem
 End Class
